@@ -10,14 +10,15 @@ AxisTester::~AxisTester()
 
 std::string AxisTester::test()
 {
-	std::string failures{ "" };
+	std::string output{ "" };
 
-	failures += testXpos();
-	failures += testYpos();
-	failures += testWidth();
-	failures += testHeight();
+	output += testXpos();
+	output += testYpos();
+	output += testZpos();
+	output += testWidth();
+	output += testHeight();
 
-	return failures;
+	return output;
 }
 
 std::string AxisTester::testXpos()
@@ -28,6 +29,11 @@ std::string AxisTester::testXpos()
 std::string AxisTester::testYpos()
 {
 	return AxisYposTest().test();
+}
+
+std::string AxisTester::testZpos()
+{
+	return AxisZposTest().test();
 }
 
 std::string AxisTester::testWidth()

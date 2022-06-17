@@ -10,13 +10,13 @@ PointTester::~PointTester()
 
 std::string PointTester::test()
 {
-	std::string failures{ "" };
+	std::string output{ "" };
 
-	failures += testXpos();
-	failures += testYpos();
-	failures += testZpos();
+	output += testXpos();
+	output += testYpos();
+	output += testZpos();
 
-	return failures;
+	return output;
 }
 
 std::string PointTester::testXpos()

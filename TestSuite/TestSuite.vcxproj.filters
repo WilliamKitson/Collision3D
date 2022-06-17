@@ -105,6 +105,9 @@
     <ClCompile Include="src\presentation\circle\CircleZposTest.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="src\presentation\axis\AxisZposTest.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="src\domain\pointPoint\PointPointCollisionTest.h">
@@ -192,6 +195,9 @@
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="src\presentation\circle\CircleZposTest.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\presentation\axis\AxisZposTest.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>

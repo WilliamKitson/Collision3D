@@ -166,6 +166,7 @@
     <ClCompile Include="src\presentation\axis\AxisWidthTest.cpp" />
     <ClCompile Include="src\presentation\axis\AxisXposTest.cpp" />
     <ClCompile Include="src\presentation\axis\AxisYposTest.cpp" />
+    <ClCompile Include="src\presentation\axis\AxisZposTest.cpp" />
     <ClCompile Include="src\presentation\circle\CircleRadiusTest.cpp" />
     <ClCompile Include="src\presentation\circle\CircleTester.cpp" />
     <ClCompile Include="src\presentation\circle\CircleXposTest.cpp" />
@@ -197,6 +198,7 @@
     <ClInclude Include="src\presentation\axis\AxisWidthTest.h" />
     <ClInclude Include="src\presentation\axis\AxisXposTest.h" />
     <ClInclude Include="src\presentation\axis\AxisYposTest.h" />
+    <ClInclude Include="src\presentation\axis\AxisZposTest.h" />
     <ClInclude Include="src\presentation\circle\CircleRadiusTest.h" />
     <ClInclude Include="src\presentation\circle\CircleTester.h" />
     <ClInclude Include="src\presentation\circle\CircleXposTest.h" />

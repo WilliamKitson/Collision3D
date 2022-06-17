@@ -10,14 +10,14 @@ CircleTester::~CircleTester()
 
 std::string CircleTester::test()
 {
-	std::string failures{ "" };
+	std::string output{ "" };
 
-	failures += testXpos();
-	failures += testYpos();
-	failures += testZpos();
-	failures += testRadius();
+	output += testXpos();
+	output += testYpos();
+	output += testZpos();
+	output += testRadius();
 
-	return failures;
+	return output;
 }
 
 std::string CircleTester::testXpos()

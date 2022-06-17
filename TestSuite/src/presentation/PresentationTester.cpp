@@ -10,13 +10,13 @@ PresentationTester::~PresentationTester()
 
 std::string PresentationTester::test()
 {
-	std::string failures{ "" };
+	std::string output{ "" };
 
-	failures += testPoint();
-	failures += testCircle();
-	failures += testAxis();
+	output += testPoint();
+	output += testCircle();
+	output += testAxis();
 
-	return failures;
+	return output;
 }
 
 std::string PresentationTester::testPoint()

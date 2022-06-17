@@ -4,6 +4,7 @@
 
 #include "AxisXposTest.h"
 #include "AxisYposTest.h"
+#include "AxisZposTest.h"
 #include "AxisWidthTest.h"
 #include "AxisHeightTest.h"
 
@@ -18,6 +19,7 @@ public:
 private:
 	std::string testXpos();
 	std::string testYpos();
+	std::string testZpos();
 	std::string testWidth();
 	std::string testHeight();
 };
