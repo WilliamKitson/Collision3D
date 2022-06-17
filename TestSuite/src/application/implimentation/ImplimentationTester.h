@@ -4,6 +4,7 @@
 
 #include "ImplimentationDefaultTest.h"
 #include "collision/ImplimentationCollisionTester.h"
+#include "evasion/ImplimentationEvasionTester.h"
 
 class ImplimentationTester
 {
@@ -16,4 +17,5 @@ public:
 private:
 	std::string testDefault();
 	std::string testCollision();
+	std::string testEvasion();
 };

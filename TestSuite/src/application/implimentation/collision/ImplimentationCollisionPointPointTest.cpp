@@ -13,15 +13,9 @@ ImplimentationCollisionPointPointTest::~ImplimentationCollisionPointPointTest()
 
 std::string ImplimentationCollisionPointPointTest::test()
 {
-	collision3D::Point point{
-		1.0f,
-		2.0f,
-		3.0f
-	};
-
 	unit->calculate(
-		point,
-		point
+		collision3D::Point(),
+		collision3D::Point()
 	);
 
 	if (unit->getCollision())

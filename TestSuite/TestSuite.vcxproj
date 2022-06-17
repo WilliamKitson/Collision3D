@@ -150,6 +150,8 @@
     <ClCompile Include="src\application\ApplicationTester.cpp" />
     <ClCompile Include="src\application\implimentation\collision\ImplimentationCollisionPointPointTest.cpp" />
     <ClCompile Include="src\application\implimentation\collision\ImplimentationCollisionTester.cpp" />
+    <ClCompile Include="src\application\implimentation\evasion\ImplimentationEvasionPointPointTest.cpp" />
+    <ClCompile Include="src\application\implimentation\evasion\ImplimentationEvasionTester.cpp" />
     <ClCompile Include="src\application\implimentation\ImplimentationDefaultTest.cpp" />
     <ClCompile Include="src\application\implimentation\ImplimentationTester.cpp" />
     <ClCompile Include="src\domain\circlePoint\CirclePointCollisionTest.cpp" />
@@ -189,6 +191,8 @@
     <ClInclude Include="src\application\ApplicationTester.h" />
     <ClInclude Include="src\application\implimentation\collision\ImplimentationCollisionPointPointTest.h" />
     <ClInclude Include="src\application\implimentation\collision\ImplimentationCollisionTester.h" />
+    <ClInclude Include="src\application\implimentation\evasion\ImplimentationEvasionPointPointTest.h" />
+    <ClInclude Include="src\application\implimentation\evasion\ImplimentationEvasionTester.h" />
     <ClInclude Include="src\application\implimentation\ImplimentationDefaultTest.h" />
     <ClInclude Include="src\application\implimentation\ImplimentationTester.h" />
     <ClInclude Include="src\domain\circlePoint\CirclePointCollisionTest.h" />

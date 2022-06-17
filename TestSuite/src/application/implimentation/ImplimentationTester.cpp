@@ -14,6 +14,7 @@ std::string ImplimentationTester::test()
 
 	output += testDefault();
 	output += testCollision();
+	output += testEvasion();
 
 	return output;
 }
@@ -26,4 +27,9 @@ std::string ImplimentationTester::testDefault()
 std::string ImplimentationTester::testCollision()
 {
 	return ImplimentationCollisionTester().test();
+}
+
+std::string ImplimentationTester::testEvasion()
+{
+	return ImplimentationEvasionTester().test();
 }
