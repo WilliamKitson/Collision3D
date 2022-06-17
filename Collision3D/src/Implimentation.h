@@ -1,6 +1,7 @@
 #pragma once
 
 #include "Facade.h"
+#include "PointPoint.h"
 
 namespace collision3D
 {
@@ -10,5 +11,11 @@ namespace collision3D
 	public:
 		Implimentation();
 		virtual ~Implimentation();
+
+		virtual void calculate(Point, Point);
+		virtual bool getCollision();
+
+	private:
+		bool collision;
 	};
 }

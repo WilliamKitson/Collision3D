@@ -1,7 +1,9 @@
 #pragma once
 
 #include <string>
+
 #include "ImplimentationDefaultTest.h"
+#include "ImplimentationPointPointTest.h"
 
 class ImplimentationTester
 {
@@ -13,4 +15,5 @@ public:
 
 private:
 	std::string testDefault();
+	std::string testPointPoint();
 };

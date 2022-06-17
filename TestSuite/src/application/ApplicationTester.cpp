@@ -19,5 +19,5 @@ std::string ApplicationTester::test()
 
 std::string ApplicationTester::testImplimentation()
 {
-	return ImplimentationDefaultTest().test();
+	return ImplimentationTester().test();
 }
