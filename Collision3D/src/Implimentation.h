@@ -13,6 +13,7 @@ namespace collision3D
 		virtual ~Implimentation();
 
 		virtual void calculate(Point, Point);
+		virtual void calculate(Circle, Point);
 		virtual bool getCollision();
 
 	private:

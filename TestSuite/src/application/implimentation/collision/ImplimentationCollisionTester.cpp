@@ -13,6 +13,7 @@ std::string ImplimentationCollisionTester::test()
 	std::string output{ "" };
 
 	output += testPointPoint();
+	output += testCirclePoint();
 
 	return output;
 }
@@ -20,4 +21,9 @@ std::string ImplimentationCollisionTester::test()
 std::string ImplimentationCollisionTester::testPointPoint()
 {
 	return ImplimentationCollisionPointPointTest().test();
+}
+
+std::string ImplimentationCollisionTester::testCirclePoint()
+{
+	return ImplimentationCollisionCirclePointTest().test();
 }

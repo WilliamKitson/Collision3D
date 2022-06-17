@@ -1,6 +1,7 @@
 #pragma once
 
 #include "Point.h"
+#include "Circle.h"
 
 namespace collision3D
 {
@@ -11,6 +12,7 @@ namespace collision3D
 		virtual ~Facade();
 
 		virtual void calculate(Point, Point);
+		virtual void calculate(Circle, Point);
 		virtual bool getCollision();
 	};
 }

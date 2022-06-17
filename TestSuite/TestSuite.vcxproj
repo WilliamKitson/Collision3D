@@ -148,6 +148,7 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="src\application\ApplicationTester.cpp" />
+    <ClCompile Include="src\application\implimentation\collision\ImplimentationCollisionCirclePointTest.cpp" />
     <ClCompile Include="src\application\implimentation\collision\ImplimentationCollisionPointPointTest.cpp" />
     <ClCompile Include="src\application\implimentation\collision\ImplimentationCollisionTester.cpp" />
     <ClCompile Include="src\application\implimentation\evasion\ImplimentationEvasionPointPointTest.cpp" />
@@ -189,6 +190,7 @@
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="src\application\ApplicationTester.h" />
+    <ClInclude Include="src\application\implimentation\collision\ImplimentationCollisionCirclePointTest.h" />
     <ClInclude Include="src\application\implimentation\collision\ImplimentationCollisionPointPointTest.h" />
     <ClInclude Include="src\application\implimentation\collision\ImplimentationCollisionTester.h" />
     <ClInclude Include="src\application\implimentation\evasion\ImplimentationEvasionPointPointTest.h" />
