@@ -1,4 +1,4 @@
-#include "PointCircle.h"
+#include "CirclePoint.h"
 
 collision3D::CirclePoint::CirclePoint()
 	: collision{ false }

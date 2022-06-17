@@ -3,7 +3,7 @@
 #include <string>
 #include <math.h>
 
-#include "PointCircle.h"
+#include "CirclePoint.h"
 
 class PointCircleCollisionTest
 {

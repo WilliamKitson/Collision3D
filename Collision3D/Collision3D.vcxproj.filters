@@ -18,7 +18,7 @@
     <ClCompile Include="src\PointPoint.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="src\PointCircle.cpp">
+    <ClCompile Include="src\CirclePoint.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
@@ -26,7 +26,7 @@
     <ClInclude Include="src\PointPoint.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="src\PointCircle.h">
+    <ClInclude Include="src\CirclePoint.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
