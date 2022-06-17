@@ -5,11 +5,11 @@
 
 #include "CirclePoint.h"
 
-class PointCircleCollisionTest
+class CirclePointCollisionTest
 {
 public:
-	PointCircleCollisionTest();
-	~PointCircleCollisionTest();
+	CirclePointCollisionTest();
+	~CirclePointCollisionTest();
 
 	std::string test();
 

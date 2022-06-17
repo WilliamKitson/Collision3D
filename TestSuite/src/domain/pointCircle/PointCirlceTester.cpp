@@ -27,7 +27,7 @@ std::string PointCircleTester::testDefault()
 
 std::string PointCircleTester::testCollision()
 {
-	return PointCircleCollisionTest().test();
+	return CirclePointCollisionTest().test();
 }
 
 std::string PointCircleTester::testEvasion()

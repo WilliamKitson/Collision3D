@@ -148,8 +148,8 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="src\domain\DomainTester.cpp" />
+    <ClCompile Include="src\domain\pointCircle\CirclePointCollisionTest.cpp" />
     <ClCompile Include="src\domain\pointCircle\CirclePointDefaultTest.cpp" />
-    <ClCompile Include="src\domain\pointCircle\PointCircleCollisionTest.cpp" />
     <ClCompile Include="src\domain\pointCircle\PointCircleEvasionTest.cpp" />
     <ClCompile Include="src\domain\pointCircle\PointCircleInversionTest.cpp" />
     <ClCompile Include="src\domain\pointCircle\PointCirlceTester.cpp" />
@@ -165,8 +165,8 @@
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="src\domain\DomainTester.h" />
+    <ClInclude Include="src\domain\pointCircle\CirclePointCollisionTest.h" />
     <ClInclude Include="src\domain\pointCircle\CirclePointDefaultTest.h" />
-    <ClInclude Include="src\domain\pointCircle\PointCircleCollisionTest.h" />
     <ClInclude Include="src\domain\pointCircle\PointCircleEvasionTest.h" />
     <ClInclude Include="src\domain\pointCircle\PointCircleInversionTest.h" />
     <ClInclude Include="src\domain\pointCircle\PointCirlceTester.h" />

@@ -3,7 +3,7 @@
 #include <string>
 
 #include "CirclePointDefaultTest.h"
-#include "PointCircleCollisionTest.h"
+#include "CirclePointCollisionTest.h"
 #include "PointCircleEvasionTest.h"
 #include "PointCircleInversionTest.h"
 

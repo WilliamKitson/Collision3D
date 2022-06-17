@@ -1,15 +1,15 @@
-#include "PointCircleCollisionTest.h"
+#include "CirclePointCollisionTest.h"
 
-PointCircleCollisionTest::PointCircleCollisionTest()
+CirclePointCollisionTest::CirclePointCollisionTest()
 	: itterations{ 4 }, successes{ 0 }
 {
 }
 
-PointCircleCollisionTest::~PointCircleCollisionTest()
+CirclePointCollisionTest::~CirclePointCollisionTest()
 {
 }
 
-std::string PointCircleCollisionTest::test()
+std::string CirclePointCollisionTest::test()
 {
 	for (int i{ 0 }; i < itterations; i++)
 	{
@@ -34,10 +34,10 @@ std::string PointCircleCollisionTest::test()
 		return std::string();
 	}
 
-	return "point circle collision test failed\n";
+	return "circle point collision test failed\n";
 }
 
-float PointCircleCollisionTest::calculateDistance(double a, double b)
+float CirclePointCollisionTest::calculateDistance(double a, double b)
 {
 	double distance = a - b;
 	return (float)sqrt((distance * distance) + (distance * distance));
