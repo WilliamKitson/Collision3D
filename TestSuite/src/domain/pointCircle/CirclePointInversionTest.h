@@ -3,11 +3,11 @@
 #include <string>
 #include "CirclePoint.h"
 
-class PointCircleInversionTest
+class CirclePointInversionTest
 {
 public:
-	PointCircleInversionTest();
-	~PointCircleInversionTest();
+	CirclePointInversionTest();
+	~CirclePointInversionTest();
 
 	std::string test();
 

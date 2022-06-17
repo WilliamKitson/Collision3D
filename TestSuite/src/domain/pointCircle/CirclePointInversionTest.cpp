@@ -1,15 +1,15 @@
-#include "PointCircleInversionTest.h"
+#include "CirclePointInversionTest.h"
 
-PointCircleInversionTest::PointCircleInversionTest()
+CirclePointInversionTest::CirclePointInversionTest()
 	: itterations{ 4 }, successes{ 0 }
 {
 }
 
-PointCircleInversionTest::~PointCircleInversionTest()
+CirclePointInversionTest::~CirclePointInversionTest()
 {
 }
 
-std::string PointCircleInversionTest::test()
+std::string CirclePointInversionTest::test()
 {
 	for (int i{ 0 }; i < itterations; i++)
 	{
@@ -34,16 +34,16 @@ std::string PointCircleInversionTest::test()
 		return std::string();
 	}
 
-	return "point circle inversion test failed\n";
+	return "circle point inversion test failed\n";
 }
 
-float PointCircleInversionTest::calculateDistance(double a, double b)
+float CirclePointInversionTest::calculateDistance(double a, double b)
 {
 	double distance = a - b;
 	return (float)sqrt((distance * distance) + (distance * distance));
 }
 
-float PointCircleInversionTest::invertValue(float value)
+float CirclePointInversionTest::invertValue(float value)
 {
 	return value * -1.0f;
 }
