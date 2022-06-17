@@ -3,11 +3,11 @@
 #include <string>
 #include "CirclePoint.h"
 
-class PointCircleEvasionTest
+class CirclePointEvasionTest
 {
 public:
-	PointCircleEvasionTest();
-	~PointCircleEvasionTest();
+	CirclePointEvasionTest();
+	~CirclePointEvasionTest();
 
 	std::string test();
 

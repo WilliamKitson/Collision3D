@@ -32,7 +32,7 @@ std::string PointCircleTester::testCollision()
 
 std::string PointCircleTester::testEvasion()
 {
-	return PointCircleEvasionTest().test();
+	return CirclePointEvasionTest().test();
 }
 
 std::string PointCircleTester::testInversion()

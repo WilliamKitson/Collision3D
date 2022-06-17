@@ -4,7 +4,7 @@
 
 #include "CirclePointDefaultTest.h"
 #include "CirclePointCollisionTest.h"
-#include "PointCircleEvasionTest.h"
+#include "CirclePointEvasionTest.h"
 #include "PointCircleInversionTest.h"
 
 class PointCircleTester

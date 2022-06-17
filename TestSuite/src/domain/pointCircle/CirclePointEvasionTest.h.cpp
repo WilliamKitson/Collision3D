@@ -1,15 +1,15 @@
-#include "PointCircleEvasionTest.h"
+#include "CirclePointEvasionTest.h"
 
-PointCircleEvasionTest::PointCircleEvasionTest()
+CirclePointEvasionTest::CirclePointEvasionTest()
 	: itterations{ 4 }, successes{ 0 }
 {
 }
 
-PointCircleEvasionTest::~PointCircleEvasionTest()
+CirclePointEvasionTest::~CirclePointEvasionTest()
 {
 }
 
-std::string PointCircleEvasionTest::test()
+std::string CirclePointEvasionTest::test()
 {
 	for (int i{ 0 }; i < itterations; i++)
 	{
@@ -34,5 +34,5 @@ std::string PointCircleEvasionTest::test()
 		return std::string();
 	}
 
-	return "point circle evasion test failed\n";
+	return "circle point evasion test failed\n";
 }
