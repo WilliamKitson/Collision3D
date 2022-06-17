@@ -57,6 +57,9 @@
     <ClCompile Include="src\domain\circlePoint\CirclePointEvasionTest.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="src\domain\circlePoint\CirclePointInvertedTest.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="src\domain\pointPoint\PointPointCollisionTest.h">
@@ -96,6 +99,9 @@
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="src\domain\circlePoint\CirclePointEvasionTest.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\domain\circlePoint\CirclePointInvertedTest.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
