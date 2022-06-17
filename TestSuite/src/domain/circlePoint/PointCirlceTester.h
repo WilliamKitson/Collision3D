@@ -4,6 +4,7 @@
 
 #include "CirclePointDefaultTest.h"
 #include "CirclePointCollisionTest.h"
+#include "CirclePointEvasionTest.h"
 
 class PointCircleTester
 {
@@ -16,4 +17,5 @@ public:
 private:
 	std::string testDefault();
 	std::string testCollision();
+	std::string testEvasion();
 };
