@@ -3,7 +3,7 @@
 #include <string>
 
 #include "pointPoint/PointPointTester.h"
-#include "pointCircle/PointCirlceTester.h"
+#include "circlePoint/PointCirlceTester.h"
 
 class DomainTester
 {
@@ -15,5 +15,5 @@ public:
 
 private:
 	std::string testPointPoint();
-	std::string testPointCircle();
+	std::string testCirclePoint();
 };

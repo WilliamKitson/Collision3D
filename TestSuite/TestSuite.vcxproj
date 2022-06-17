@@ -147,12 +147,12 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="src\domain\circlePoint\CirclePointCollisionTest.cpp" />
+    <ClCompile Include="src\domain\circlePoint\CirclePointDefaultTest.cpp" />
+    <ClCompile Include="src\domain\circlePoint\CirclePointEvasionTest.h.cpp" />
+    <ClCompile Include="src\domain\circlePoint\CirclePointInversionTest.cpp" />
+    <ClCompile Include="src\domain\circlePoint\PointCirlceTester.cpp" />
     <ClCompile Include="src\domain\DomainTester.cpp" />
-    <ClCompile Include="src\domain\pointCircle\CirclePointCollisionTest.cpp" />
-    <ClCompile Include="src\domain\pointCircle\CirclePointDefaultTest.cpp" />
-    <ClCompile Include="src\domain\pointCircle\CirclePointEvasionTest.h.cpp" />
-    <ClCompile Include="src\domain\pointCircle\CirclePointInversionTest.cpp" />
-    <ClCompile Include="src\domain\pointCircle\PointCirlceTester.cpp" />
     <ClCompile Include="src\domain\pointPoint\PointPointCollisionTest.cpp" />
     <ClCompile Include="src\domain\pointPoint\PointPointDefaultTest.cpp" />
     <ClCompile Include="src\domain\pointPoint\PointPointTester.cpp" />
@@ -164,12 +164,12 @@
     <ClCompile Include="src\SubordinateTester.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="src\domain\circlePoint\CirclePointCollisionTest.h" />
+    <ClInclude Include="src\domain\circlePoint\CirclePointDefaultTest.h" />
+    <ClInclude Include="src\domain\circlePoint\CirclePointEvasionTest.h" />
+    <ClInclude Include="src\domain\circlePoint\CirclePointInversionTest.h" />
+    <ClInclude Include="src\domain\circlePoint\PointCirlceTester.h" />
     <ClInclude Include="src\domain\DomainTester.h" />
-    <ClInclude Include="src\domain\pointCircle\CirclePointCollisionTest.h" />
-    <ClInclude Include="src\domain\pointCircle\CirclePointDefaultTest.h" />
-    <ClInclude Include="src\domain\pointCircle\CirclePointEvasionTest.h" />
-    <ClInclude Include="src\domain\pointCircle\CirclePointInversionTest.h" />
-    <ClInclude Include="src\domain\pointCircle\PointCirlceTester.h" />
     <ClInclude Include="src\domain\pointPoint\PointPointCollisionTest.h" />
     <ClInclude Include="src\domain\pointPoint\PointPointDefaultTest.h" />
     <ClInclude Include="src\domain\pointPoint\PointPointTester.h" />
