@@ -25,12 +25,6 @@ int CirclePointCollisionTest::successes()
 
 	for (int i{ 0 }; i < itterations; i++)
 	{
-		float point[3]{
-			(float)i,
-			(float)i,
-			(float)i
-		};
-
 		float circle[4]{
 			(float)i * -1,
 			(float)i * -1,
@@ -38,10 +32,16 @@ int CirclePointCollisionTest::successes()
 			0.0f
 		};
 
+		float point[3]{
+			(float)i,
+			(float)i,
+			(float)i
+		};
+
 		circle[3] = squareRoot(distance(point[0], circle[0]) + distance(point[1], circle[1]) + distance(point[2], circle[2]));
 
 		collision3D::CirclePoint unit;
-		unit.calculate(point, circle);
+		unit.calculate(circle, point);
 		output += unit.getCollision() == true;
 	}
 

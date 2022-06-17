@@ -51,8 +51,8 @@ void collision3D::Implimentation::calculate(Circle a, Point b)
 	CirclePoint output;
 
 	output.calculate(
-		point,
-		circle
+		circle,
+		point
 	);
 
 	collision = output.getCollision();

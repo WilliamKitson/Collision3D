@@ -9,9 +9,9 @@ collision3D::CirclePoint::~CirclePoint()
 {
 }
 
-void collision3D::CirclePoint::calculate(float point[3], float circle[4])
+void collision3D::CirclePoint::calculate(float circle[4], float point[3])
 {
-	collision = colliding(point, circle);
+	collision = colliding(circle, point);
 }
 
 bool collision3D::CirclePoint::getCollision()
@@ -19,9 +19,9 @@ bool collision3D::CirclePoint::getCollision()
 	return collision;
 }
 
-bool collision3D::CirclePoint::colliding(float point[3], float circle[4])
+bool collision3D::CirclePoint::colliding(float circle[4], float point[3])
 {
-	if (squareRoot(distance(point[0], circle[0]) + distance(point[1], circle[1]) + distance(point[2], circle[2])) > correct(circle[3]))
+	if (squareRoot(distance(circle[0], point[0]) + distance(circle[1], point[1]) + distance(circle[2], point[2])) > correct(circle[3]))
 	{
 		return false;
 	}

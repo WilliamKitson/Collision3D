@@ -8,11 +8,11 @@ namespace collision3D
 		CirclePoint();
 		~CirclePoint();
 
-		void calculate(float[3], float[4]);
+		void calculate(float[4], float[3]);
 		bool getCollision();
 
 	private:
-		bool colliding(float[3], float[4]);
+		bool colliding(float[4], float[3]);
 		float distance(float, float);
 		float squareRoot(float);
 		float correct(float);

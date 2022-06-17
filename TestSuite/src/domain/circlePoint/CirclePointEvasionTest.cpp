@@ -13,12 +13,6 @@ std::string CirclePointEvasionTest::test()
 {
 	for (int i{ 1 }; i < itterations; i++)
 	{
-		float point[3]{
-			(float)i,
-			(float)i,
-			(float)i
-		};
-
 		float circle[4]{
 			(float)i * -1,
 			(float)i * -1,
@@ -26,8 +20,14 @@ std::string CirclePointEvasionTest::test()
 			0.0f
 		};
 
+		float point[3]{
+			(float)i,
+			(float)i,
+			(float)i
+		};
+
 		collision3D::CirclePoint unit;
-		unit.calculate(point, circle);
+		unit.calculate(circle, point);
 		successes += unit.getCollision() == false;
 	}
 
