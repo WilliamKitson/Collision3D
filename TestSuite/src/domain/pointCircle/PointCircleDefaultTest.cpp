@@ -10,7 +10,7 @@ PointCircleDefaultTest::~PointCircleDefaultTest()
 
 std::string PointCircleDefaultTest::test()
 {
-	if (collision2D::PointCircle().getCollision() == false)
+	if (collision2D::CirclePoint().getCollision() == false)
 	{
 		return std::string();
 	}

@@ -24,7 +24,7 @@ std::string PointCircleInversionTest::test()
 			invertValue(calculateDistance((double)i, (double)i * (double)i))
 		};
 
-		collision2D::PointCircle unit;
+		collision2D::CirclePoint unit;
 		unit.calculate(point, circle);
 		successes += unit.getCollision() == true;
 	}

@@ -2,11 +2,11 @@
 
 namespace collision2D
 {
-	class PointCircle
+	class CirclePoint
 	{
 	public:
-		PointCircle();
-		~PointCircle();
+		CirclePoint();
+		~CirclePoint();
 
 		void calculate(float[2], float[3]);
 		bool getCollision();
