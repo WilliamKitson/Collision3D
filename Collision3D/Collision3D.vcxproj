@@ -156,12 +156,16 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="src\CirclePoint.cpp" />
+    <ClCompile Include="src\Facade.cpp" />
+    <ClCompile Include="src\Implimentation.cpp" />
     <ClCompile Include="src\PointPoint.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="src\Axis.h" />
     <ClInclude Include="src\Circle.h" />
     <ClInclude Include="src\CirclePoint.h" />
+    <ClInclude Include="src\Facade.h" />
+    <ClInclude Include="src\Implimentation.h" />
     <ClInclude Include="src\Point.h" />
     <ClInclude Include="src\PointPoint.h" />
   </ItemGroup>
