@@ -2,7 +2,7 @@
 
 #include <string>
 
-#include "PointCircleDefaultTest.h"
+#include "CirclePointDefaultTest.h"
 #include "PointCircleCollisionTest.h"
 #include "PointCircleEvasionTest.h"
 #include "PointCircleInversionTest.h"

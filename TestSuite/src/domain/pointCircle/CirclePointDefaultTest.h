@@ -3,11 +3,11 @@
 #include <string>
 #include "CirclePoint.h"
 
-class PointCircleDefaultTest
+class CirclePointDefaultTest
 {
 public:
-	PointCircleDefaultTest();
-	~PointCircleDefaultTest();
+	CirclePointDefaultTest();
+	~CirclePointDefaultTest();
 
 	std::string test();
 };

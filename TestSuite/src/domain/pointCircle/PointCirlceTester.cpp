@@ -10,19 +10,19 @@ PointCircleTester::~PointCircleTester()
 
 std::string PointCircleTester::test()
 {
-	std::string failures{ "" };
+	std::string output{ "" };
 
-	failures += testDefault();
-	failures += testCollision();
-	failures += testEvasion();
-	failures += testInversion();
+	output += testDefault();
+	output += testCollision();
+	output += testEvasion();
+	output += testInversion();
 
-	return failures;
+	return output;
 }
 
 std::string PointCircleTester::testDefault()
 {
-	return PointCircleDefaultTest().test();
+	return CirclePointDefaultTest().test();
 }
 
 std::string PointCircleTester::testCollision()
