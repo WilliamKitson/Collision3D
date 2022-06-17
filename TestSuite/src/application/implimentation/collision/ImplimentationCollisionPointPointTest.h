@@ -5,11 +5,11 @@
 #include "Facade.h"
 #include "Implimentation.h"
 
-class ImplimentationPointPointTest
+class ImplimentationCollisionPointPointTest
 {
 public:
-	ImplimentationPointPointTest();
-	~ImplimentationPointPointTest();
+	ImplimentationCollisionPointPointTest();
+	~ImplimentationCollisionPointPointTest();
 
 	std::string test();
 

@@ -120,7 +120,10 @@
     <ClCompile Include="src\application\ApplicationTester.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="src\application\implimentation\ImplimentationPointPointTest.cpp">
+    <ClCompile Include="src\application\implimentation\collision\ImplimentationCollisionTester.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\application\implimentation\collision\ImplimentationCollisionPointPointTest.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
@@ -227,7 +230,10 @@
     <ClInclude Include="src\application\ApplicationTester.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="src\application\implimentation\ImplimentationPointPointTest.h">
+    <ClInclude Include="src\application\implimentation\collision\ImplimentationCollisionTester.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\application\implimentation\collision\ImplimentationCollisionPointPointTest.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>

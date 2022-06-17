@@ -3,7 +3,7 @@
 #include <string>
 
 #include "ImplimentationDefaultTest.h"
-#include "ImplimentationPointPointTest.h"
+#include "collision/ImplimentationCollisionTester.h"
 
 class ImplimentationTester
 {
@@ -15,5 +15,5 @@ public:
 
 private:
 	std::string testDefault();
-	std::string testPointPoint();
+	std::string testCollision();
 };
