@@ -1,11 +1,7 @@
 #pragma once
 
 #include <string>
-
 #include "CirclePointDefaultTest.h"
-#include "CirclePointCollisionTest.h"
-#include "CirclePointEvasionTest.h"
-#include "CirclePointInversionTest.h"
 
 class PointCircleTester
 {
@@ -17,7 +13,4 @@ public:
 
 private:
 	std::string testDefault();
-	std::string testCollision();
-	std::string testEvasion();
-	std::string testInversion();
 };
