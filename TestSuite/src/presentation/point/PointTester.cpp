@@ -14,6 +14,7 @@ std::string PointTester::test()
 
 	failures += testXpos();
 	failures += testYpos();
+	failures += testZpos();
 
 	return failures;
 }
@@ -26,4 +27,9 @@ std::string PointTester::testXpos()
 std::string PointTester::testYpos()
 {
 	return PointYposTest().test();
+}
+
+std::string PointTester::testZpos()
+{
+	return PointZposTest().test();
 }

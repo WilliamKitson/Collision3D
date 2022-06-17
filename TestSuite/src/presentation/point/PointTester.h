@@ -4,6 +4,7 @@
 
 #include "PointXposTest.h"
 #include "PointYposTest.h"
+#include "PointZposTest.h"
 
 class PointTester
 {
@@ -16,4 +17,5 @@ public:
 private:
 	std::string testXpos();
 	std::string testYpos();
+	std::string testZpos();
 };
