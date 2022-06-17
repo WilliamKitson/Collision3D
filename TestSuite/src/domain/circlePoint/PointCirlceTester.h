@@ -1,7 +1,9 @@
 #pragma once
 
 #include <string>
+
 #include "CirclePointDefaultTest.h"
+#include "CirclePointCollisionTest.h"
 
 class PointCircleTester
 {
@@ -13,4 +15,5 @@ public:
 
 private:
 	std::string testDefault();
+	std::string testCollision();
 };

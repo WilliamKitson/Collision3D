@@ -147,6 +147,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="src\domain\circlePoint\CirclePointCollisionTest.cpp" />
     <ClCompile Include="src\domain\circlePoint\CirclePointDefaultTest.cpp" />
     <ClCompile Include="src\domain\circlePoint\PointCirlceTester.cpp" />
     <ClCompile Include="src\domain\DomainTester.cpp" />
@@ -161,6 +162,7 @@
     <ClCompile Include="src\SubordinateTester.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="src\domain\circlePoint\CirclePointCollisionTest.h" />
     <ClInclude Include="src\domain\circlePoint\CirclePointDefaultTest.h" />
     <ClInclude Include="src\domain\circlePoint\PointCirlceTester.h" />
     <ClInclude Include="src\domain\DomainTester.h" />
