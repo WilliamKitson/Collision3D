@@ -13,14 +13,16 @@ std::string PointPointYposTest::test()
 {
 	for (int i{ 0 }; i < itterations; i++)
 	{
-		float pointA[2]{
+		float pointA[3]{
 			0.0f,
-			(float)i
+			(float)i,
+			0.0f
 		};
 
-		float pointB[2]{
+		float pointB[3]{
 			0.0f,
-			(float)i + 1
+			(float)i + 1,
+			0.0f
 		};
 
 		collision3D::PointPoint unit;

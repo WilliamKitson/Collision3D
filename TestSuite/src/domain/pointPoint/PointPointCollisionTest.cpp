@@ -13,7 +13,8 @@ std::string PointPointCollisionTest::test()
 {
 	for (int i{ 0 }; i < itterations; i++)
 	{
-		float point[2]{
+		float point[3]{
+			(float)i,
 			(float)i,
 			(float)i
 		};

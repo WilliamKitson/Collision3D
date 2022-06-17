@@ -13,13 +13,15 @@ std::string PointPointXposTest::test()
 {
 	for (int i{ 0 }; i < itterations; i++)
 	{
-		float pointA[2]{
+		float pointA[3]{
 			(float)i,
+			0.0f,
 			0.0f
 		};
 
-		float pointB[2]{
+		float pointB[3]{
 			(float)i + 1,
+			0.0f,
 			0.0f
 		};
 

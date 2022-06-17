@@ -8,12 +8,12 @@ namespace collision3D
 		PointPoint();
 		~PointPoint();
 
-		void calculate(float[2], float[2]);
+		void calculate(float[3], float[3]);
 		bool getCollision();
 
 	private:
-		bool xposCollision(float[2], float[2]);
-		bool yposCollision(float[2], float[2]);
+		bool xposCollision(float[3], float[3]);
+		bool yposCollision(float[3], float[3]);
 
 	private:
 		bool collision;
