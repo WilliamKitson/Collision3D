@@ -26,10 +26,10 @@ bool collision3D::PointPoint::xposCollision(float a[3], float b[3])
 		return false;
 	}
 
-	return yposCollision(a, b);
+	return ypos(a, b);
 }
 
-bool collision3D::PointPoint::yposCollision(float a[3], float b[3])
+bool collision3D::PointPoint::ypos(float a[3], float b[3])
 {
 	if (a[1] != b[1])
 	{
