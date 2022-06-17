@@ -24,7 +24,7 @@ std::string PointCircleEvasionTest::test()
 			0.0f
 		};
 
-		collision2D::CirclePoint unit;
+		collision3D::CirclePoint unit;
 		unit.calculate(point, circle);
 		successes += unit.getCollision() == false;
 	}
