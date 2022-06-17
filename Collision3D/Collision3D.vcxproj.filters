@@ -18,9 +18,15 @@
     <ClCompile Include="src\PointPoint.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="src\PointCircle.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="src\PointPoint.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\PointCircle.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>

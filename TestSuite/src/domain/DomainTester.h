@@ -1,7 +1,9 @@
 #pragma once
 
 #include <string>
+
 #include "pointPoint/PointPointTester.h"
+#include "pointCircle/PointCirlceTester.h"
 
 class DomainTester
 {
@@ -13,4 +15,5 @@ public:
 
 private:
 	std::string testPointPoint();
+	std::string testPointCircle();
 };

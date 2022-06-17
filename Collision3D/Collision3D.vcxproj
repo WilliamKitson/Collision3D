@@ -155,9 +155,11 @@
     </PostBuildEvent>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="src\PointCircle.cpp" />
     <ClCompile Include="src\PointPoint.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="src\PointCircle.h" />
     <ClInclude Include="src\PointPoint.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
