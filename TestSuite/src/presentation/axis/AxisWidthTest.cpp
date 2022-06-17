@@ -10,7 +10,7 @@ AxisWidthTest::~AxisWidthTest()
 
 std::string AxisWidthTest::test()
 {
-	if (!collision2D::Axis().width)
+	if (!collision3D::Axis().width)
 	{
 		return std::string();
 	}

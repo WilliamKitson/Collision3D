@@ -10,7 +10,7 @@ AxisYposTest::~AxisYposTest()
 
 std::string AxisYposTest::test()
 {
-	if (!collision2D::Axis().ypos)
+	if (!collision3D::Axis().ypos)
 	{
 		return std::string();
 	}

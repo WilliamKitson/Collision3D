@@ -10,7 +10,7 @@ CircleXposTest::~CircleXposTest()
 
 std::string CircleXposTest::test()
 {
-	if (!collision2D::Circle().xpos)
+	if (!collision3D::Circle().xpos)
 	{
 		return std::string();
 	}

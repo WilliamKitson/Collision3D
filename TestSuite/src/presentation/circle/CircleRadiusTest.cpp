@@ -10,7 +10,7 @@ CircleRadiusTest::~CircleRadiusTest()
 
 std::string CircleRadiusTest::test()
 {
-	if (!collision2D::Circle().radius)
+	if (!collision3D::Circle().radius)
 	{
 		return std::string();
 	}

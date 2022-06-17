@@ -1,6 +1,6 @@
 #pragma once
 
-namespace collision2D
+namespace collision3D
 {
 	struct Axis
 	{

@@ -10,7 +10,7 @@ AxisXposTest::~AxisXposTest()
 
 std::string AxisXposTest::test()
 {
-	if (!collision2D::Axis().xpos)
+	if (!collision3D::Axis().xpos)
 	{
 		return std::string();
 	}

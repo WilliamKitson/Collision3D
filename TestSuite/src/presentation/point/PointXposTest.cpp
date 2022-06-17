@@ -10,7 +10,7 @@ PointXposTest::~PointXposTest()
 
 std::string PointXposTest::test()
 {
-	if (!collision2D::Point().xpos)
+	if (!collision3D::Point().xpos)
 	{
 		return std::string();
 	}

@@ -10,7 +10,7 @@ AxisHeightTest::~AxisHeightTest()
 
 std::string AxisHeightTest::test()
 {
-	if (!collision2D::Axis().height)
+	if (!collision3D::Axis().height)
 	{
 		return std::string();
 	}
