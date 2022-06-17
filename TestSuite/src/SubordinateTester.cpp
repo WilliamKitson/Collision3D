@@ -10,11 +10,11 @@ SubordinateTester::~SubordinateTester()
 
 std::string SubordinateTester::test()
 {
-	std::string failures{ "" };
+	std::string output{ "" };
 
-	failures += testDomain();
+	output += testDomain();
 
-	return failures;
+	return output;
 }
 
 std::string SubordinateTester::testDomain()

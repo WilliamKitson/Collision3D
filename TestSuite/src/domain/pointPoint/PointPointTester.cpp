@@ -10,15 +10,15 @@ PointPointTester::~PointPointTester()
 
 std::string PointPointTester::test()
 {
-	std::string failures{ "" };
+	std::string output{ "" };
 
-	failures += testDefault();
-	failures += testCollision();
-	failures += testXpos();
-	failures += testYpos();
-	failures += testZpos();
+	output += testDefault();
+	output += testCollision();
+	output += testXpos();
+	output += testYpos();
+	output += testZpos();
 
-	return failures;
+	return output;
 }
 
 std::string PointPointTester::testDefault()

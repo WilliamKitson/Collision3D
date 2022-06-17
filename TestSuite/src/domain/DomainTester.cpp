@@ -10,11 +10,11 @@ DomainTester::~DomainTester()
 
 std::string DomainTester::test()
 {
-	std::string failures{ "" };
+	std::string output{ "" };
 
-	failures += testPointPoint();
+	output += testPointPoint();
 
-	return failures;
+	return output;
 }
 
 std::string DomainTester::testPointPoint()
