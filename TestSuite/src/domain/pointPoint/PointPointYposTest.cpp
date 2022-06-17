@@ -23,7 +23,7 @@ std::string PointPointYposTest::test()
 			(float)i + 1
 		};
 
-		collision2D::PointPoint unit;
+		collision3D::PointPoint unit;
 		unit.calculate(pointA, pointB);
 		successes += unit.getCollision() == false;
 	}

@@ -18,7 +18,7 @@ std::string PointPointCollisionTest::test()
 			(float)i
 		};
 
-		collision2D::PointPoint unit;
+		collision3D::PointPoint unit;
 		unit.calculate(point, point);
 		successes += unit.getCollision() == true;
 	}

@@ -10,7 +10,7 @@ PointPointDefaultTest::~PointPointDefaultTest()
 
 std::string PointPointDefaultTest::test()
 {
-	if (collision2D::PointPoint().getCollision() == false)
+	if (collision3D::PointPoint().getCollision() == false)
 	{
 		return std::string();
 	}
