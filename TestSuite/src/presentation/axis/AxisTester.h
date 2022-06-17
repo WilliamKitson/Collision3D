@@ -7,6 +7,7 @@
 #include "AxisZposTest.h"
 #include "AxisWidthTest.h"
 #include "AxisHeightTest.h"
+#include "AxisDepthTest.h"
 
 class AxisTester
 {
@@ -22,4 +23,5 @@ private:
 	std::string testZpos();
 	std::string testWidth();
 	std::string testHeight();
+	std::string testDepth();
 };

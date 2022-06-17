@@ -17,6 +17,7 @@ std::string AxisTester::test()
 	output += testZpos();
 	output += testWidth();
 	output += testHeight();
+	output += testDepth();
 
 	return output;
 }
@@ -44,4 +45,9 @@ std::string AxisTester::testWidth()
 std::string AxisTester::testHeight()
 {
 	return AxisHeightTest().test();
+}
+
+std::string AxisTester::testDepth()
+{
+	return AxisDepthTest().test();
 }

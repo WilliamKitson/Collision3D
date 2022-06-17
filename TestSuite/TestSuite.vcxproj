@@ -161,6 +161,7 @@
     <ClCompile Include="src\domain\pointPoint\PointPointZposTest.cpp" />
     <ClCompile Include="src\Entrypoint.cpp" />
     <ClCompile Include="src\MemoryTest.cpp" />
+    <ClCompile Include="src\presentation\axis\AxisDepthTest.cpp" />
     <ClCompile Include="src\presentation\axis\AxisHeightTest.cpp" />
     <ClCompile Include="src\presentation\axis\AxisTester.cpp" />
     <ClCompile Include="src\presentation\axis\AxisWidthTest.cpp" />
@@ -193,6 +194,7 @@
     <ClInclude Include="src\domain\pointPoint\PointPointYposTest.h" />
     <ClInclude Include="src\domain\pointPoint\PointPointZposTest.h" />
     <ClInclude Include="src\MemoryTest.h" />
+    <ClInclude Include="src\presentation\axis\AxisDepthTest.h" />
     <ClInclude Include="src\presentation\axis\AxisHeightTest.h" />
     <ClInclude Include="src\presentation\axis\AxisTester.h" />
     <ClInclude Include="src\presentation\axis\AxisWidthTest.h" />
