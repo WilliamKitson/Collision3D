@@ -14,7 +14,7 @@ public:
 	std::string test();
 
 private:
-	float calculateDistance(double, double);
+	float distance(double, double);
 
 private:
 	int itterations;

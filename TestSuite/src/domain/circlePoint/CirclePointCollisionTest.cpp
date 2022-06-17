@@ -23,7 +23,7 @@ std::string CirclePointCollisionTest::test()
 			(float)i * i,
 			(float)i * i,
 			(float)i * i,
-			calculateDistance((double)i, (double)i * (double)i)
+			distance((double)i, (double)i * (double)i)
 		};
 
 		collision3D::CirclePoint unit;
@@ -39,7 +39,7 @@ std::string CirclePointCollisionTest::test()
 	return "circle point collision test failed\n";
 }
 
-float CirclePointCollisionTest::calculateDistance(double a, double b)
+float CirclePointCollisionTest::distance(double a, double b)
 {
 	double distance = a - b;
 	return (float)sqrt((distance * distance) + (distance * distance) + (distance * distance));
