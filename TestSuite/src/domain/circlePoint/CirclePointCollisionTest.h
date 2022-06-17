@@ -1,8 +1,6 @@
 #pragma once
 
 #include <string>
-#include <math.h>
-
 #include "CirclePoint.h"
 
 class CirclePointCollisionTest
@@ -15,7 +13,8 @@ public:
 
 private:
 	int successes();
-	float distance(double, double);
+	float distance(float, float);
+	float squareRoot(float);
 
 private:
 	int itterations;
