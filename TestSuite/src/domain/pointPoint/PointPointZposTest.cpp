@@ -1,7 +1,7 @@
 #include "PointPointZposTest.h"
 
 PointPointZposTest::PointPointZposTest()
-	: itterations{ 4 }, successes{ 0 }
+	: itterations{ 4 }
 {
 }
 
@@ -11,6 +11,18 @@ PointPointZposTest::~PointPointZposTest()
 
 std::string PointPointZposTest::test()
 {
+	if (successes() == itterations)
+	{
+		return std::string();
+	}
+
+	return "point point zpos test failed\n";
+}
+
+int PointPointZposTest::successes()
+{
+	int output = 0;
+
 	for (int i{ 0 }; i < itterations; i++)
 	{
 		float pointA[3]{
@@ -27,13 +39,8 @@ std::string PointPointZposTest::test()
 
 		collision3D::PointPoint unit;
 		unit.calculate(pointA, pointB);
-		successes += unit.getCollision() == false;
+		output += unit.getCollision() == false;
 	}
 
-	if (successes == itterations)
-	{
-		return std::string();
-	}
-
-	return "point point zpos test failed\n";
+	return output;
 }
