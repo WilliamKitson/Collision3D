@@ -12,6 +12,7 @@ namespace collision3D
 		bool getCollision();
 
 	private:
+		float distance(float, float);
 		float squareRoot(float);
 
 	private:
