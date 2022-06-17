@@ -159,7 +159,10 @@
     <ClCompile Include="src\PointPoint.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="src\Axis.h" />
+    <ClInclude Include="src\Circle.h" />
     <ClInclude Include="src\CirclePoint.h" />
+    <ClInclude Include="src\Point.h" />
     <ClInclude Include="src\PointPoint.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
