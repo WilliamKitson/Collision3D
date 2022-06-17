@@ -14,6 +14,7 @@ namespace collision3D
 	private:
 		bool xposCollision(float[3], float[3]);
 		bool yposCollision(float[3], float[3]);
+		bool zpos(float[3], float[3]);
 
 	private:
 		bool collision;

@@ -6,6 +6,7 @@
 #include "PointPointCollisionTest.h"
 #include "PointPointXposTest.h"
 #include "PointPointYposTest.h"
+#include "PointPointZposTest.h"
 
 class PointPointTester
 {
@@ -20,4 +21,5 @@ private:
 	std::string testCollision();
 	std::string testXpos();
 	std::string testYpos();
+	std::string testZpos();
 };
