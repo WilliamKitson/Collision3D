@@ -14,9 +14,9 @@ public:
 	std::string test();
 
 private:
+	int successes();
 	float distance(double, double);
 
 private:
 	int itterations;
-	int successes;
 };

@@ -1,7 +1,7 @@
 #include "CirclePointCollisionTest.h"
 
 CirclePointCollisionTest::CirclePointCollisionTest()
-	: itterations{ 4 }, successes{ 0 }
+	: itterations{ 4 }
 {
 }
 
@@ -11,6 +11,18 @@ CirclePointCollisionTest::~CirclePointCollisionTest()
 
 std::string CirclePointCollisionTest::test()
 {
+	if (successes() == itterations)
+	{
+		return std::string();
+	}
+
+	return "circle point collision test failed\n";
+}
+
+int CirclePointCollisionTest::successes()
+{
+	int output = 0;
+
 	for (int i{ 0 }; i < itterations; i++)
 	{
 		float point[3]{
@@ -28,15 +40,10 @@ std::string CirclePointCollisionTest::test()
 
 		collision3D::CirclePoint unit;
 		unit.calculate(point, circle);
-		successes += unit.getCollision() == true;
+		output += unit.getCollision() == true;
 	}
 
-	if (successes == itterations)
-	{
-		return std::string();
-	}
-
-	return "circle point collision test failed\n";
+	return output;
 }
 
 float CirclePointCollisionTest::distance(double a, double b)
