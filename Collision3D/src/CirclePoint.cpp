@@ -11,18 +11,22 @@ collision3D::CirclePoint::~CirclePoint()
 
 void collision3D::CirclePoint::calculate(float point[3], float circle[4])
 {
-	if (squareRoot(distance(point[0], circle[0]) + distance(point[1], circle[1]) + distance(point[2], circle[2])) < circle[3])
-	{
-		collision = false;
-		return;
-	}
-
-	collision = true;
+	collision = colliding(point, circle);
 }
 
 bool collision3D::CirclePoint::getCollision()
 {
 	return collision;
+}
+
+bool collision3D::CirclePoint::colliding(float point[3], float circle[4])
+{
+	if (squareRoot(distance(point[0], circle[0]) + distance(point[1], circle[1]) + distance(point[2], circle[2])) < circle[3])
+	{
+		return false;
+	}
+
+	return true;
 }
 
 float collision3D::CirclePoint::distance(float a, float b)
