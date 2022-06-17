@@ -13,6 +13,7 @@ std::string ImplimentationEvasionTester::test()
 	std::string output{ "" };
 
 	output += testPointPoint();
+	output += testCirclePoint();
 
 	return output;
 }
@@ -20,4 +21,9 @@ std::string ImplimentationEvasionTester::test()
 std::string ImplimentationEvasionTester::testPointPoint()
 {
 	return ImplimentationEvasionPointPointTest().test();
+}
+
+std::string ImplimentationEvasionTester::testCirclePoint()
+{
+	return ImplimentationEvasionCirclePointTest().test();
 }

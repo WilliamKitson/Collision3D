@@ -13,21 +13,15 @@ ImplimentationEvasionPointPointTest::~ImplimentationEvasionPointPointTest()
 
 std::string ImplimentationEvasionPointPointTest::test()
 {
-	collision3D::Point pointA{
-		0.0f,
-		0.0f,
-		0.0f
-	};
-
-	collision3D::Point pointB{
+	collision3D::Point point{
 		1.0f,
 		1.0f,
 		1.0f
 	};
 
 	unit->calculate(
-		pointA,
-		pointB
+		point,
+		collision3D::Point()
 	);
 
 	if (!unit->getCollision())
