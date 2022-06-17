@@ -170,6 +170,7 @@
     <ClCompile Include="src\presentation\circle\CircleTester.cpp" />
     <ClCompile Include="src\presentation\circle\CircleXposTest.cpp" />
     <ClCompile Include="src\presentation\circle\CircleYposTest.cpp" />
+    <ClCompile Include="src\presentation\circle\CircleZposTest.cpp" />
     <ClCompile Include="src\presentation\point\PointTester.cpp" />
     <ClCompile Include="src\presentation\point\PointXposTest.cpp" />
     <ClCompile Include="src\presentation\point\PointYposTest.cpp" />
@@ -200,6 +201,7 @@
     <ClInclude Include="src\presentation\circle\CircleTester.h" />
     <ClInclude Include="src\presentation\circle\CircleXposTest.h" />
     <ClInclude Include="src\presentation\circle\CircleYposTest.h" />
+    <ClInclude Include="src\presentation\circle\CircleZposTest.h" />
     <ClInclude Include="src\presentation\point\PointTester.h" />
     <ClInclude Include="src\presentation\point\PointXposTest.h" />
     <ClInclude Include="src\presentation\point\PointYposTest.h" />

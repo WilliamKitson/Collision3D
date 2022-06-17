@@ -14,6 +14,7 @@ std::string CircleTester::test()
 
 	failures += testXpos();
 	failures += testYpos();
+	failures += testZpos();
 	failures += testRadius();
 
 	return failures;
@@ -27,6 +28,11 @@ std::string CircleTester::testXpos()
 std::string CircleTester::testYpos()
 {
 	return CircleYposTest().test();
+}
+
+std::string CircleTester::testZpos()
+{
+	return CircleZposTest().test();
 }
 
 std::string CircleTester::testRadius()
