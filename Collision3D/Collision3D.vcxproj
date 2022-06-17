@@ -21,32 +21,32 @@
   <PropertyGroup Label="Globals">
     <VCProjectVersion>16.0</VCProjectVersion>
     <Keyword>Win32Proj</Keyword>
-    <ProjectGuid>{a2e4d5a5-f4f2-4a9d-aef5-cad41b98e667}</ProjectGuid>
-    <RootNamespace>TestSuite</RootNamespace>
+    <ProjectGuid>{dd8e9165-4949-45c0-8851-8e78e0ba4708}</ProjectGuid>
+    <RootNamespace>Collision3D</RootNamespace>
     <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
-    <ConfigurationType>Application</ConfigurationType>
+    <ConfigurationType>StaticLibrary</ConfigurationType>
     <UseDebugLibraries>true</UseDebugLibraries>
     <PlatformToolset>v143</PlatformToolset>
     <CharacterSet>Unicode</CharacterSet>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
-    <ConfigurationType>Application</ConfigurationType>
+    <ConfigurationType>StaticLibrary</ConfigurationType>
     <UseDebugLibraries>false</UseDebugLibraries>
     <PlatformToolset>v143</PlatformToolset>
     <WholeProgramOptimization>true</WholeProgramOptimization>
     <CharacterSet>Unicode</CharacterSet>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
-    <ConfigurationType>Application</ConfigurationType>
+    <ConfigurationType>StaticLibrary</ConfigurationType>
     <UseDebugLibraries>true</UseDebugLibraries>
     <PlatformToolset>v143</PlatformToolset>
     <CharacterSet>Unicode</CharacterSet>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
-    <ConfigurationType>Application</ConfigurationType>
+    <ConfigurationType>StaticLibrary</ConfigurationType>
     <UseDebugLibraries>false</UseDebugLibraries>
     <PlatformToolset>v143</PlatformToolset>
     <WholeProgramOptimization>true</WholeProgramOptimization>
@@ -92,7 +92,6 @@
       <SDLCheck>true</SDLCheck>
       <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
-      <AdditionalIncludeDirectories>$(SolutionDir)Collision3D\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
@@ -107,7 +106,6 @@
       <SDLCheck>true</SDLCheck>
       <PreprocessorDefinitions>WIN32;NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
-      <AdditionalIncludeDirectories>$(SolutionDir)Collision3D\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
@@ -122,7 +120,6 @@
       <SDLCheck>true</SDLCheck>
       <PreprocessorDefinitions>_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
-      <AdditionalIncludeDirectories>$(SolutionDir)Collision3D\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
@@ -137,7 +134,6 @@
       <SDLCheck>true</SDLCheck>
       <PreprocessorDefinitions>NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
-      <AdditionalIncludeDirectories>$(SolutionDir)Collision3D\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
@@ -147,30 +143,10 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="src\domain\DomainTester.cpp" />
-    <ClCompile Include="src\domain\pointPoint\PointPointCollisionTest.cpp" />
-    <ClCompile Include="src\domain\pointPoint\PointPointDefaultTest.cpp" />
-    <ClCompile Include="src\domain\pointPoint\PointPointTester.cpp" />
-    <ClCompile Include="src\domain\pointPoint\PointPointXposTest.cpp" />
-    <ClCompile Include="src\domain\pointPoint\PointPointYposTest.cpp" />
-    <ClCompile Include="src\Entrypoint.cpp" />
-    <ClCompile Include="src\MemoryTest.cpp" />
-    <ClCompile Include="src\SubordinateTester.cpp" />
+    <ClCompile Include="src\PointPoint.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="src\domain\DomainTester.h" />
-    <ClInclude Include="src\domain\pointPoint\PointPointCollisionTest.h" />
-    <ClInclude Include="src\domain\pointPoint\PointPointDefaultTest.h" />
-    <ClInclude Include="src\domain\pointPoint\PointPointTester.h" />
-    <ClInclude Include="src\domain\pointPoint\PointPointXposTest.h" />
-    <ClInclude Include="src\domain\pointPoint\PointPointYposTest.h" />
-    <ClInclude Include="src\MemoryTest.h" />
-    <ClInclude Include="src\SubordinateTester.h" />
-  </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\Collision3D\Collision3D.vcxproj">
-      <Project>{dd8e9165-4949-45c0-8851-8e78e0ba4708}</Project>
-    </ProjectReference>
+    <ClInclude Include="src\PointPoint.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
