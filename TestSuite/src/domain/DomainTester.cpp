@@ -14,6 +14,7 @@ std::string DomainTester::test()
 
 	output += testPointPoint();
 	output += testCirclePoint();
+	output += testCircleCircle();
 
 	return output;
 }
@@ -26,4 +27,9 @@ std::string DomainTester::testPointPoint()
 std::string DomainTester::testCirclePoint()
 {
 	return PointCircleTester().test();
+}
+
+std::string DomainTester::testCircleCircle()
+{
+	return CircleCircleTester().test();
 }
