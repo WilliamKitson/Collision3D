@@ -39,15 +39,7 @@ int CircleCircleInvertedTest::successes()
 			0.0f
 		};
 
-		float input = distance(a[0], b[0]) + distance(a[1], b[1]) + distance(a[2], b[2]);
-		float temp = input;
-
-		while ((temp - input / temp) > 0.000001f)
-		{
-			temp = (temp + input / temp) / 2;
-		}
-
-		float radius = temp;
+		float radius = squareRoot(distance(a[0], b[0]) + distance(a[1], b[1]) + distance(a[2], b[2]));
 		radius *= -0.5f;
 
 		a[3] = radius;
@@ -65,4 +57,16 @@ float CircleCircleInvertedTest::distance(float a, float b)
 {
 	float output = a - b;
 	return output * output;
+}
+
+float CircleCircleInvertedTest::squareRoot(float input)
+{
+	float output = input;
+
+	while ((output - input / output) > 0.000001f)
+	{
+		output = (output + input / output) / 2;
+	}
+
+	return output;
 }
