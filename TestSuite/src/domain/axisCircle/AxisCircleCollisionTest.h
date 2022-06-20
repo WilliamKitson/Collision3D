@@ -1,0 +1,13 @@
+#pragma once
+
+#include <string>
+#include "AxisCircle.h"
+
+class AxisCircleCollisionTest
+{
+public:
+	AxisCircleCollisionTest();
+	~AxisCircleCollisionTest();
+
+	std::string test();
+};
