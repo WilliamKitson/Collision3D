@@ -177,10 +177,10 @@
     <ClCompile Include="src\domain\axisPoint\evasion\AxisPointEvasionRightTest.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="src\domain\axisPoint\evasion\AxisPointEvasionTopTest.cpp">
+    <ClCompile Include="src\domain\axisPoint\evasion\AxisPointEvasionBottomTest.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="src\domain\axisPoint\evasion\AxisPointEvasionBottomTest.cpp">
+    <ClCompile Include="src\domain\axisPoint\evasion\AxisPointEvasionTopTest.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
@@ -344,10 +344,10 @@
     <ClInclude Include="src\domain\axisPoint\evasion\AxisPointEvasionRightTest.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="src\domain\axisPoint\evasion\AxisPointEvasionTopTest.h">
+    <ClInclude Include="src\domain\axisPoint\evasion\AxisPointEvasionBottomTest.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="src\domain\axisPoint\evasion\AxisPointEvasionBottomTest.h">
+    <ClInclude Include="src\domain\axisPoint\evasion\AxisPointEvasionTopTest.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
