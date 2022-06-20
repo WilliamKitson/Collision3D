@@ -12,6 +12,7 @@ public:
 	std::string test();
 
 private:
+	int successes();
 	float distance(float, float);
 	float squareRoot(float);
 

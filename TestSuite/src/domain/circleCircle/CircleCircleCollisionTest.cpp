@@ -11,7 +11,17 @@ CircleCircleCollisionTest::~CircleCircleCollisionTest()
 
 std::string CircleCircleCollisionTest::test()
 {
-	int successes = 0;
+	if (successes() == itterations)
+	{
+		return std::string();
+	}
+
+	return "circle circle collision test failed\n";
+}
+
+int CircleCircleCollisionTest::successes()
+{
+	int output = 0;
 
 	for (int i{ 0 }; i < itterations; i++)
 	{
@@ -37,15 +47,10 @@ std::string CircleCircleCollisionTest::test()
 
 		collision3D::CircleCircle unit;
 		unit.calculate(a, b);
-		successes += unit.getCollision() == true;
+		output += unit.getCollision() == true;
 	}
 
-	if (successes == itterations)
-	{
-		return std::string();
-	}
-
-	return "circle circle collision test failed\n";
+	return output;
 }
 
 float CircleCircleCollisionTest::distance(float a, float b)
