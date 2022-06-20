@@ -1,7 +1,9 @@
 #pragma once
 
 #include <string>
+
 #include "CircleCircleDefaultTest.h"
+#include "CircleCircleCollisionTest.h"
 
 class CircleCircleTester
 {
@@ -13,4 +15,5 @@ public:
 
 private:
 	std::string testDefault();
+	std::string testCollision();
 };

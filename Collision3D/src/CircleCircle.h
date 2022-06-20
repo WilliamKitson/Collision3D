@@ -8,6 +8,10 @@ namespace collision3D
 		CircleCircle();
 		~CircleCircle();
 
+		void calculate(float[4], float[4]);
 		bool getCollision();
+
+	private:
+		bool collision;
 	};
 }
