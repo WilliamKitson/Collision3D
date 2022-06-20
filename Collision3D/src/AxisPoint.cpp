@@ -41,7 +41,7 @@ bool collision3D::AxisPoint::right(float axis[6], float point[3])
 
 bool collision3D::AxisPoint::top(float axis[6], float point[3])
 {
-	if (axis[1] < point[1])
+	if (axis[1] > point[1])
 	{
 		return false;
 	}
