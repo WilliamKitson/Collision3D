@@ -3,6 +3,7 @@
 #include "Facade.h"
 #include "PointPoint.h"
 #include "CirclePoint.h"
+#include "CircleCircle.h"
 
 namespace collision3D
 {
