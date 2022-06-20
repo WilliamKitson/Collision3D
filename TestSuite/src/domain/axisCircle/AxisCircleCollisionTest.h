@@ -10,4 +10,8 @@ public:
 	~AxisCircleCollisionTest();
 
 	std::string test();
+
+private:
+	float distance(float, float);
+	float squareRoot(float);
 };
