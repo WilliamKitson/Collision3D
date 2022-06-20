@@ -9,9 +9,9 @@ collision3D::AxisPoint::~AxisPoint()
 {
 }
 
-void collision3D::AxisPoint::calculate(float point[3], float axis[6])
+void collision3D::AxisPoint::calculate(float axis[6], float point[3])
 {
-	collision = left(point, axis);
+	collision = left(axis, point);
 }
 
 bool collision3D::AxisPoint::getCollision()
@@ -19,9 +19,9 @@ bool collision3D::AxisPoint::getCollision()
 	return collision;
 }
 
-bool collision3D::AxisPoint::left(float point[3], float axis[6])
+bool collision3D::AxisPoint::left(float axis[6], float point[3])
 {
-	if (point[0] < axis[0])
+	if (axis[0] > point[0])
 	{
 		return false;
 	}

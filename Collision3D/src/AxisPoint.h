@@ -8,11 +8,11 @@ namespace collision3D
 		AxisPoint();
 		~AxisPoint();
 
-		void calculate(float[3], float[6]);
+		void calculate(float[6], float[3]);
 		bool getCollision();
 
 	private:
-		bool left(float[3], float[6]);
+		bool left(float[6], float[3]);
 
 	private:
 		bool collision;
