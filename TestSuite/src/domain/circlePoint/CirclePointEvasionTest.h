@@ -10,8 +10,4 @@ public:
 	~CirclePointEvasionTest();
 
 	std::string test();
-
-private:
-	int itterations;
-	int successes;
 };

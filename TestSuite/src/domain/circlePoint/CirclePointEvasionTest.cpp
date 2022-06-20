@@ -1,7 +1,6 @@
 #include "CirclePointEvasionTest.h"
 
 CirclePointEvasionTest::CirclePointEvasionTest()
-	: itterations{ 4 }, successes{ 0 }
 {
 }
 
@@ -11,27 +10,23 @@ CirclePointEvasionTest::~CirclePointEvasionTest()
 
 std::string CirclePointEvasionTest::test()
 {
-	for (int i{ 1 }; i < itterations; i++)
-	{
-		float circle[4]{
-			(float)i * -1,
-			(float)i * -1,
-			(float)i * -1,
-			0.0f
-		};
+	float circle[4]{
+		1.0f,
+		1.0f,
+		1.0f,
+		0.0
+	};
 
-		float point[3]{
-			(float)i,
-			(float)i,
-			(float)i
-		};
+	float point[3]{
+		-1.0f,
+		-1.0f,
+		-1.0f,
+	};
 
-		collision3D::CirclePoint unit;
-		unit.calculate(circle, point);
-		successes += unit.getCollision() == false;
-	}
+	collision3D::CirclePoint unit;
+	unit.calculate(circle, point);
 
-	if (successes == itterations - 1)
+	if (!unit.getCollision())
 	{
 		return std::string();
 	}
