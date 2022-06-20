@@ -20,6 +20,10 @@ void collision3D::Facade::calculate(Circle, Circle)
 {
 }
 
+void collision3D::Facade::calculate(Axis, Point)
+{
+}
+
 bool collision3D::Facade::getCollision()
 {
     return false;

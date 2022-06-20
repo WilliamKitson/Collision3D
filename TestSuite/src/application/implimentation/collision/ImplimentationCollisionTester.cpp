@@ -15,6 +15,7 @@ std::string ImplimentationCollisionTester::test()
 	output += testPointPoint();
 	output += testCirclePoint();
 	output += testCircleCircle();
+	output += testAxisPoint();
 
 	return output;
 }
@@ -32,4 +33,9 @@ std::string ImplimentationCollisionTester::testCirclePoint()
 std::string ImplimentationCollisionTester::testCircleCircle()
 {
 	return ImplimentationCollisionCircleCircleTest().test();
+}
+
+std::string ImplimentationCollisionTester::testAxisPoint()
+{
+	return ImplimentationCollisionAxisPointTest().test();
 }
