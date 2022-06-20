@@ -15,6 +15,7 @@ namespace collision3D
 
 		virtual void calculate(Point, Point);
 		virtual void calculate(Circle, Point);
+		virtual void calculate(Circle, Circle);
 		virtual bool getCollision();
 
 	private:
