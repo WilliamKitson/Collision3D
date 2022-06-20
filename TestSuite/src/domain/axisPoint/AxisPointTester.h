@@ -5,6 +5,7 @@
 #include "AxisPointDefaultTest.h"
 #include "AxisPointCollisionTest.h"
 #include "evasion/AxisPointEvasionTester.h"
+#include "inverted/AxisPointInvertedTester.h"
 
 class AxisPointTester
 {
@@ -18,4 +19,5 @@ private:
 	std::string testDefault();
 	std::string testCollision();
 	std::string testEvasion();
+	std::string testInverted();
 };

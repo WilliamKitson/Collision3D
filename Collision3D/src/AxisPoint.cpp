@@ -21,12 +21,22 @@ bool collision3D::AxisPoint::getCollision()
 
 bool collision3D::AxisPoint::left(float axis[6], float point[3])
 {
-	if (axis[0] > point[0])
+	if (left(axis) > point[0])
 	{
 		return false;
 	}
 
 	return right(axis, point);
+}
+
+float collision3D::AxisPoint::left(float axis[6])
+{
+	if (axis[3] < 0)
+	{
+		return axis[0] + axis[3];
+	}
+
+	return axis[0];
 }
 
 bool collision3D::AxisPoint::right(float axis[6], float point[3])
