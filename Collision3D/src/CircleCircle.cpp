@@ -21,7 +21,7 @@ bool collision3D::CircleCircle::getCollision()
 
 bool collision3D::CircleCircle::colliding(float a[4], float b[4])
 {
-	if (squareRoot(distance(a[0], b[0]) + distance(a[1], b[1]) + distance(a[2], b[2])) > a[3] + b[3])
+	if (squareRoot(distance(a[0], b[0]) + distance(a[1], b[1]) + distance(a[2], b[2])) > correct(a[3]) + correct(b[3]))
 	{
 		return false;
 	}
@@ -45,4 +45,9 @@ float collision3D::CircleCircle::squareRoot(float input)
 	}
 
 	return output;
+}
+
+float collision3D::CircleCircle::correct(float input)
+{
+	return input * input;
 }

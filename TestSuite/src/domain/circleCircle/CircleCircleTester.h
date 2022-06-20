@@ -5,6 +5,7 @@
 #include "CircleCircleDefaultTest.h"
 #include "CircleCircleCollisionTest.h"
 #include "CircleCircleEvasionTest.h"
+#include "CircleCircleInvertedTest.h"
 
 class CircleCircleTester
 {
@@ -18,4 +19,5 @@ private:
 	std::string testDefault();
 	std::string testCollision();
 	std::string testEvasion();
+	std::string testInverted();
 };
