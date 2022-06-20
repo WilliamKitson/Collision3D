@@ -161,6 +161,7 @@
     <ClCompile Include="src\domain\axisPoint\AxisPointCollisionTest.cpp" />
     <ClCompile Include="src\domain\axisPoint\AxisPointDefaultTest.cpp" />
     <ClCompile Include="src\domain\axisPoint\AxisPointTester.cpp" />
+    <ClCompile Include="src\domain\axisPoint\evasion\AxisPointEvasionBottomTest.cpp" />
     <ClCompile Include="src\domain\axisPoint\evasion\AxisPointEvasionLeftTest.cpp" />
     <ClCompile Include="src\domain\axisPoint\evasion\AxisPointEvasionRightTest.cpp" />
     <ClCompile Include="src\domain\axisPoint\evasion\AxisPointEvasionTester.cpp" />
@@ -218,6 +219,7 @@
     <ClInclude Include="src\domain\axisPoint\AxisPointCollisionTest.h" />
     <ClInclude Include="src\domain\axisPoint\AxisPointDefaultTest.h" />
     <ClInclude Include="src\domain\axisPoint\AxisPointTester.h" />
+    <ClInclude Include="src\domain\axisPoint\evasion\AxisPointEvasionBottomTest.h" />
     <ClInclude Include="src\domain\axisPoint\evasion\AxisPointEvasionLeftTest.h" />
     <ClInclude Include="src\domain\axisPoint\evasion\AxisPointEvasionRightTest.h" />
     <ClInclude Include="src\domain\axisPoint\evasion\AxisPointEvasionTester.h" />
