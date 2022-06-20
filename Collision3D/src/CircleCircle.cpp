@@ -11,6 +11,16 @@ collision3D::CircleCircle::~CircleCircle()
 
 void collision3D::CircleCircle::calculate(float a[4], float b[4])
 {
+	collision = colliding(a, b);
+}
+
+bool collision3D::CircleCircle::getCollision()
+{
+	return collision;
+}
+
+bool collision3D::CircleCircle::colliding(float a[4], float b[4])
+{
 	float xDistance = a[0] - b[0];
 	xDistance *= xDistance;
 
@@ -30,14 +40,8 @@ void collision3D::CircleCircle::calculate(float a[4], float b[4])
 
 	if (output > a[3] + b[3])
 	{
-		collision = false;
-		return;
+		return false;
 	}
 
-	collision = true;
-}
-
-bool collision3D::CircleCircle::getCollision()
-{
-	return collision;
+	return true;
 }

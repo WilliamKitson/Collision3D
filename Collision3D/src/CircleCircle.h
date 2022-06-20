@@ -12,6 +12,9 @@ namespace collision3D
 		bool getCollision();
 
 	private:
+		bool colliding(float[4], float[4]);
+
+	private:
 		bool collision;
 	};
 }
