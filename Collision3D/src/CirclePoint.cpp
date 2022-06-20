@@ -49,10 +49,5 @@ float collision3D::CirclePoint::squareRoot(float input)
 
 float collision3D::CirclePoint::correct(float input)
 {
-	if (input < 0.0f)
-	{
-		return input * -1.0f;
-	}
-
-	return input;
+	return input * input;
 }
