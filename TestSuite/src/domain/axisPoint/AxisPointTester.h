@@ -1,7 +1,9 @@
 #pragma once
 
 #include <string>
+
 #include "AxisPointDefaultTest.h"
+#include "AxisPointCollisionTest.h"
 
 class AxisPointTester
 {
@@ -13,4 +15,5 @@ public:
 
 private:
 	std::string testDefault();
+	std::string testCollision();
 };
