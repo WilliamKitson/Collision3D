@@ -201,6 +201,9 @@
     <ClCompile Include="src\domain\axisPoint\inverted\AxisPointInvertedBottomTest.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="src\domain\axisPoint\inverted\AxisPointInvertedTopTest.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="src\domain\pointPoint\PointPointCollisionTest.h">
@@ -384,6 +387,9 @@
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="src\domain\axisPoint\inverted\AxisPointInvertedBottomTest.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\domain\axisPoint\inverted\AxisPointInvertedTopTest.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
