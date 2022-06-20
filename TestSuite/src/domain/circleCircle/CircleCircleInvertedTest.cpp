@@ -11,7 +11,17 @@ CircleCircleInvertedTest::~CircleCircleInvertedTest()
 
 std::string CircleCircleInvertedTest::test()
 {
-	int successes = 0;
+	if (successes() == itterations)
+	{
+		return std::string();
+	}
+
+	return "circle circle inverted test failed\n";
+}
+
+int CircleCircleInvertedTest::successes()
+{
+	int output = 0;
 
 	for (int i{ 0 }; i < itterations; i++)
 	{
@@ -39,14 +49,14 @@ std::string CircleCircleInvertedTest::test()
 		zDistance *= zDistance;
 
 		float input = xDistance + yDistance + zDistance;
-		float output = input;
+		float temp = input;
 
-		while ((output - input / output) > 0.000001f)
+		while ((temp - input / temp) > 0.000001f)
 		{
-			output = (output + input / output) / 2;
+			temp = (temp + input / temp) / 2;
 		}
 
-		float radius = output;
+		float radius = temp;
 		radius *= -0.5f;
 
 		a[3] = radius;
@@ -54,13 +64,8 @@ std::string CircleCircleInvertedTest::test()
 
 		collision3D::CircleCircle unit;
 		unit.calculate(a, b);
-		successes += unit.getCollision() == true;
+		output += unit.getCollision() == true;
 	}
 
-	if (successes == itterations)
-	{
-		return std::string();
-	}
-
-	return "circle circle inverted test failed\n";
+	return output;
 }
