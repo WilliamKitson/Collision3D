@@ -158,6 +158,8 @@
     <ClCompile Include="src\application\implimentation\evasion\ImplimentationEvasionTester.cpp" />
     <ClCompile Include="src\application\implimentation\ImplimentationDefaultTest.cpp" />
     <ClCompile Include="src\application\implimentation\ImplimentationTester.cpp" />
+    <ClCompile Include="src\domain\axisPoint\AxisPointDefaultTest.cpp" />
+    <ClCompile Include="src\domain\axisPoint\AxisPointTester.cpp" />
     <ClCompile Include="src\domain\circleCircle\CircleCircleCollisionTest.cpp" />
     <ClCompile Include="src\domain\circleCircle\CircleCircleDefaultTest.cpp" />
     <ClCompile Include="src\domain\circleCircle\CircleCircleEvasionTest.cpp" />
@@ -208,6 +210,8 @@
     <ClInclude Include="src\application\implimentation\evasion\ImplimentationEvasionTester.h" />
     <ClInclude Include="src\application\implimentation\ImplimentationDefaultTest.h" />
     <ClInclude Include="src\application\implimentation\ImplimentationTester.h" />
+    <ClInclude Include="src\domain\axisPoint\AxisPointDefaultTest.h" />
+    <ClInclude Include="src\domain\axisPoint\AxisPointTester.h" />
     <ClInclude Include="src\domain\circleCircle\CircleCircleCollisionTest.h" />
     <ClInclude Include="src\domain\circleCircle\CircleCircleDefaultTest.h" />
     <ClInclude Include="src\domain\circleCircle\CircleCircleEvasionTest.h" />
