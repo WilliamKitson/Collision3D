@@ -213,6 +213,9 @@
     <ClCompile Include="src\application\implimentation\collision\ImplimentationCollisionAxisPointTest.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="src\application\implimentation\evasion\ImplimentationEvasionAxisPointTest.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="src\domain\pointPoint\PointPointCollisionTest.h">
@@ -408,6 +411,9 @@
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="src\application\implimentation\collision\ImplimentationCollisionAxisPointTest.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\application\implimentation\evasion\ImplimentationEvasionAxisPointTest.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>

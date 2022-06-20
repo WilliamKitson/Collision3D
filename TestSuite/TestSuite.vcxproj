@@ -153,6 +153,7 @@
     <ClCompile Include="src\application\implimentation\collision\ImplimentationCollisionCirclePointTest.cpp" />
     <ClCompile Include="src\application\implimentation\collision\ImplimentationCollisionPointPointTest.cpp" />
     <ClCompile Include="src\application\implimentation\collision\ImplimentationCollisionTester.cpp" />
+    <ClCompile Include="src\application\implimentation\evasion\ImplimentationEvasionAxisPointTest.cpp" />
     <ClCompile Include="src\application\implimentation\evasion\ImplimentationEvasionCircleCircleTest.cpp" />
     <ClCompile Include="src\application\implimentation\evasion\ImplimentationEvasionCirclePointTest.cpp" />
     <ClCompile Include="src\application\implimentation\evasion\ImplimentationEvasionPointPointTest.cpp" />
@@ -221,6 +222,7 @@
     <ClInclude Include="src\application\implimentation\collision\ImplimentationCollisionCirclePointTest.h" />
     <ClInclude Include="src\application\implimentation\collision\ImplimentationCollisionPointPointTest.h" />
     <ClInclude Include="src\application\implimentation\collision\ImplimentationCollisionTester.h" />
+    <ClInclude Include="src\application\implimentation\evasion\ImplimentationEvasionAxisPointTest.h" />
     <ClInclude Include="src\application\implimentation\evasion\ImplimentationEvasionCircleCircleTest.h" />
     <ClInclude Include="src\application\implimentation\evasion\ImplimentationEvasionCirclePointTest.h" />
     <ClInclude Include="src\application\implimentation\evasion\ImplimentationEvasionPointPointTest.h" />
