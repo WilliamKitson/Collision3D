@@ -14,7 +14,6 @@ std::string AxisCircleTester::test()
 
 	output += testDefault();
 	output += testCollision();
-	output += testEvasion();
 
 	return output;
 }
@@ -27,9 +26,4 @@ std::string AxisCircleTester::testDefault()
 std::string AxisCircleTester::testCollision()
 {
 	return AxisCircleCollisionTest().test();
-}
-
-std::string AxisCircleTester::testEvasion()
-{
-	return AxisCircleEvasionTester().test();
 }
