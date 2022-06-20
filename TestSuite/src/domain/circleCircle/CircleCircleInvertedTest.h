@@ -13,6 +13,7 @@ public:
 
 private:
 	int successes();
+	float distance(float, float);
 
 private:
 	int itterations;

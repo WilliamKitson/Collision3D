@@ -39,16 +39,7 @@ int CircleCircleInvertedTest::successes()
 			0.0f
 		};
 
-		float xDistance = a[0] - b[0];
-		xDistance *= xDistance;
-
-		float yDistance = a[1] - b[1];
-		yDistance *= yDistance;
-
-		float zDistance = a[2] - b[2];
-		zDistance *= zDistance;
-
-		float input = xDistance + yDistance + zDistance;
+		float input = distance(a[0], b[0]) + distance(a[1], b[1]) + distance(a[2], b[2]);
 		float temp = input;
 
 		while ((temp - input / temp) > 0.000001f)
@@ -68,4 +59,10 @@ int CircleCircleInvertedTest::successes()
 	}
 
 	return output;
+}
+
+float CircleCircleInvertedTest::distance(float a, float b)
+{
+	float output = a - b;
+	return output * output;
 }
