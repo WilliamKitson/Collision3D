@@ -17,6 +17,7 @@ std::string AxisPointInvertedTester::test()
 	output += testBottom();
 	output += testTop();
 	output += testBack();
+	output += testFront();
 
 	return output;
 }
@@ -44,4 +45,9 @@ std::string AxisPointInvertedTester::testTop()
 std::string AxisPointInvertedTester::testBack()
 {
 	return AxisPointInvertedBackTest().test();
+}
+
+std::string AxisPointInvertedTester::testFront()
+{
+	return AxisPointInvertedFrontTest().test();
 }
