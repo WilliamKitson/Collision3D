@@ -6,6 +6,7 @@
 #include "AxisPointInvertedRightTest.h"
 #include "AxisPointInvertedBottomTest.h"
 #include "AxisPointInvertedTopTest.h"
+#include "AxisPointInvertedBackTest.h"
 
 class AxisPointInvertedTester
 {
@@ -20,4 +21,5 @@ private:
 	std::string testRight();
 	std::string testBottom();
 	std::string testTop();
+	std::string testBack();
 };
