@@ -6,6 +6,7 @@
 #include "circlePoint/PointCirlceTester.h"
 #include "circleCircle/CircleCircleTester.h"
 #include "axisPoint/AxisPointTester.h"
+#include "axisCircle/AxisCircleTester.h"
 
 class DomainTester
 {
@@ -20,4 +21,5 @@ private:
 	std::string testCirclePoint();
 	std::string testCircleCircle();
 	std::string testAxisPoint();
+	std::string testAxisCircle();
 };
