@@ -66,5 +66,15 @@ bool collision3D::AxisPoint::back(float axis[6], float point[3])
 		return false;
 	}
 
+	return front(axis, point);
+}
+
+bool collision3D::AxisPoint::front(float axis[6], float point[3])
+{
+	if ((axis[2] + axis[5]) < point[2])
+	{
+		return false;
+	}
+
 	return true;
 }
