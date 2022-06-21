@@ -42,18 +42,17 @@ float collision3D::CircleCircle::distance(float a[4], float b[4])
 
 float collision3D::CircleCircle::distance(float a, float b)
 {
-	float output = a - b;
-	return output * output;
-}
-
-float collision3D::CircleCircle::radius(float a[4], float b[4])
-{
-	return correct(a[3]) + correct(b[3]);
+	return correct(a - b);
 }
 
 float collision3D::CircleCircle::correct(float input)
 {
 	return input * input;
+}
+
+float collision3D::CircleCircle::radius(float a[4], float b[4])
+{
+	return correct(a[3]) + correct(b[3]);
 }
 
 float collision3D::CircleCircle::squareRoot(float input)
