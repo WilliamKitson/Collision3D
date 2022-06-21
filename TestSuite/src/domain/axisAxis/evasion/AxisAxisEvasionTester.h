@@ -1,7 +1,9 @@
 #pragma once
 
 #include <string>
+
 #include "AxisAxisEvasionLeftTest.h"
+#include "AxisAxisEvasionRightTest.h"
 
 class AxisAxisEvasionTester
 {
@@ -13,4 +15,5 @@ public:
 
 private:
 	std::string testLeft();
+	std::string testRight();
 };

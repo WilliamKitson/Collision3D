@@ -26,5 +26,15 @@ bool collision3D::AxisAxis::left(float a[6], float b[6])
 		return false;
 	}
 
+	return right(a, b);
+}
+
+bool collision3D::AxisAxis::right(float a[6], float b[6])
+{
+	if ((a[0] + a[3]) < b[0])
+	{
+		return false;
+	}
+
 	return true;
 }
