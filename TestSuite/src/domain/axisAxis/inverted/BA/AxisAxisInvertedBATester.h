@@ -7,6 +7,7 @@
 #include "AxisAxisInvertedBABottomTest.h"
 #include "AxisAxisInvertedBATopTest.h"
 #include "AxisAxisInvertedBABackTest.h"
+#include "AxisAxisInvertedBAFrontTest.h"
 
 class AxisAxisInvertedBATester
 {
@@ -22,4 +23,5 @@ private:
 	std::string testBottom();
 	std::string testTop();
 	std::string testBack();
+	std::string testFront();
 };
