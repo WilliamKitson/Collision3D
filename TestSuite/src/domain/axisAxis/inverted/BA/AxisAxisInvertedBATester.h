@@ -1,7 +1,9 @@
 #pragma once
 
 #include <string>
+
 #include "AxisAxisInvertedBALeftTest.h"
+#include "AxisAxisInvertedBARightTest.h"
 
 class AxisAxisInvertedBATester
 {
@@ -13,4 +15,5 @@ public:
 
 private:
 	std::string testLeft();
+	std::string testRight();
 };
