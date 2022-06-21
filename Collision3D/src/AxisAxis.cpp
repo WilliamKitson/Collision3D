@@ -56,5 +56,15 @@ bool collision3D::AxisAxis::top(float a[6], float b[6])
 		return false;
 	}
 
+	return back(a, b);
+}
+
+bool collision3D::AxisAxis::back(float a[6], float b[6])
+{
+	if (a[2] > b[2])
+	{
+		return false;
+	}
+
 	return true;
 }

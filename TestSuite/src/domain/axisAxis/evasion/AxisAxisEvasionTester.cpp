@@ -16,6 +16,7 @@ std::string AxisAxisEvasionTester::test()
 	output += testRight();
 	output += testBottom();
 	output += testTop();
+	output += testBack();
 
 	return output;
 }
@@ -38,4 +39,9 @@ std::string AxisAxisEvasionTester::testBottom()
 std::string AxisAxisEvasionTester::testTop()
 {
 	return AxisAxisEvasionTopTest().test();
+}
+
+std::string AxisAxisEvasionTester::testBack()
+{
+	return AxisAxisEvasionBackTest().test();
 }

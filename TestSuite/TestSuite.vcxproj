@@ -163,6 +163,7 @@
     <ClCompile Include="src\domain\axisAxis\AxisAxisCollisionTest.cpp" />
     <ClCompile Include="src\domain\axisAxis\AxisAxisDefaultTest.cpp" />
     <ClCompile Include="src\domain\axisAxis\AxisAxisTester.cpp" />
+    <ClCompile Include="src\domain\axisAxis\evasion\AxisAxisEvasionBackTest.cpp" />
     <ClCompile Include="src\domain\axisAxis\evasion\AxisAxisEvasionBottomTest.cpp" />
     <ClCompile Include="src\domain\axisAxis\evasion\AxisAxisEvasionLeftTest.cpp" />
     <ClCompile Include="src\domain\axisAxis\evasion\AxisAxisEvasionRightTest.cpp" />
@@ -243,6 +244,7 @@
     <ClInclude Include="src\domain\axisAxis\AxisAxisCollisionTest.h" />
     <ClInclude Include="src\domain\axisAxis\AxisAxisDefaultTest.h" />
     <ClInclude Include="src\domain\axisAxis\AxisAxisTester.h" />
+    <ClInclude Include="src\domain\axisAxis\evasion\AxisAxisEvasionBackTest.h" />
     <ClInclude Include="src\domain\axisAxis\evasion\AxisAxisEvasionBottomTest.h" />
     <ClInclude Include="src\domain\axisAxis\evasion\AxisAxisEvasionLeftTest.h" />
     <ClInclude Include="src\domain\axisAxis\evasion\AxisAxisEvasionRightTest.h" />
