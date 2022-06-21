@@ -14,6 +14,7 @@ std::string AxisAxisTester::test()
 
 	output += testDefault();
 	output += testCollision();
+	output += testEvasion();
 
 	return output;
 }
@@ -26,4 +27,9 @@ std::string AxisAxisTester::testDefault()
 std::string AxisAxisTester::testCollision()
 {
 	return AxisAxisCollisionTest().test();
+}
+
+std::string AxisAxisTester::testEvasion()
+{
+	return AxisAxisEvasionTester().test();
 }

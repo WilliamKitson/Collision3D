@@ -4,6 +4,7 @@
 
 #include "AxisAxisDefaultTest.h"
 #include "AxisAxisCollisionTest.h"
+#include "evasion/AxisAxisEvasionTester.h"
 
 class AxisAxisTester
 {
@@ -16,4 +17,5 @@ public:
 private:
 	std::string testDefault();
 	std::string testCollision();
+	std::string testEvasion();
 };
