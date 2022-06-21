@@ -24,6 +24,10 @@ void collision3D::Facade::calculate(Axis, Point)
 {
 }
 
+void collision3D::Facade::calculate(Axis, Axis)
+{
+}
+
 bool collision3D::Facade::getCollision()
 {
     return false;
