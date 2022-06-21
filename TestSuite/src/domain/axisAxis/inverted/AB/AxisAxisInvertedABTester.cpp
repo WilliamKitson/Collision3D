@@ -15,6 +15,7 @@ std::string AxisAxisInvertedABTester::test()
 	output += testLeft();
 	output += testRight();
 	output += testBottom();
+	output += testTop();
 
 	return output;
 }
@@ -32,4 +33,9 @@ std::string AxisAxisInvertedABTester::testRight()
 std::string AxisAxisInvertedABTester::testBottom()
 {
 	return AxisAxisInvertedABBottomTest().test();
+}
+
+std::string AxisAxisInvertedABTester::testTop()
+{
+	return AxisAxisInvertedABTopTest().test();
 }
