@@ -170,6 +170,7 @@
     <ClCompile Include="src\domain\axisAxis\evasion\AxisAxisEvasionRightTest.cpp" />
     <ClCompile Include="src\domain\axisAxis\evasion\AxisAxisEvasionTester.cpp" />
     <ClCompile Include="src\domain\axisAxis\evasion\AxisAxisEvasionTopTest.cpp" />
+    <ClCompile Include="src\domain\axisAxis\inverted\AB\AxisAxisInvertedABBackTest.cpp" />
     <ClCompile Include="src\domain\axisAxis\inverted\AB\AxisAxisInvertedABBottomTest.cpp" />
     <ClCompile Include="src\domain\axisAxis\inverted\AB\AxisAxisInvertedABLeftTest.cpp" />
     <ClCompile Include="src\domain\axisAxis\inverted\AB\AxisAxisInvertedABRightTest.cpp" />
@@ -258,6 +259,7 @@
     <ClInclude Include="src\domain\axisAxis\evasion\AxisAxisEvasionRightTest.h" />
     <ClInclude Include="src\domain\axisAxis\evasion\AxisAxisEvasionTester.h" />
     <ClInclude Include="src\domain\axisAxis\evasion\AxisAxisEvasionTopTest.h" />
+    <ClInclude Include="src\domain\axisAxis\inverted\AB\AxisAxisInvertedABBackTest.h" />
     <ClInclude Include="src\domain\axisAxis\inverted\AB\AxisAxisInvertedABBottomTest.h" />
     <ClInclude Include="src\domain\axisAxis\inverted\AB\AxisAxisInvertedABLeftTest.h" />
     <ClInclude Include="src\domain\axisAxis\inverted\AB\AxisAxisInvertedABRightTest.h" />
