@@ -111,9 +111,34 @@ void collision3D::Implimentation::calculate(Axis a, Point b)
 	collision = output.getCollision();
 }
 
-void collision3D::Implimentation::calculate(Axis, Axis)
+void collision3D::Implimentation::calculate(Axis a, Axis b)
 {
-	collision = true;
+	float axisA[6]{
+		a.xpos,
+		a.ypos,
+		a.zpos,
+		a.width,
+		a.height,
+		a.depth
+	};
+
+	float axisB[6]{
+		b.xpos,
+		b.ypos,
+		b.zpos,
+		b.width,
+		b.height,
+		b.depth
+	};
+
+	AxisAxis output;
+
+	output.calculate(
+		axisA,
+		axisB
+	);
+
+	collision = output.getCollision();
 }
 
 bool collision3D::Implimentation::getCollision()

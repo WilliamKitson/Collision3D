@@ -5,6 +5,7 @@
 #include "CirclePoint.h"
 #include "CircleCircle.h"
 #include "AxisPoint.h"
+#include "AxisAxis.h"
 
 namespace collision3D
 {
