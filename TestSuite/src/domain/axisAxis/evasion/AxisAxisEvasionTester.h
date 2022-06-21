@@ -5,6 +5,7 @@
 #include "AxisAxisEvasionLeftTest.h"
 #include "AxisAxisEvasionRightTest.h"
 #include "AxisAxisEvasionBottomTest.h"
+#include "AxisAxisEvasionTopTest.h"
 
 class AxisAxisEvasionTester
 {
@@ -18,4 +19,5 @@ private:
 	std::string testLeft();
 	std::string testRight();
 	std::string testBottom();
+	std::string testTop();
 };
