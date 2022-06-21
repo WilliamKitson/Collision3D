@@ -21,7 +21,7 @@ bool collision3D::CirclePoint::getCollision()
 
 bool collision3D::CirclePoint::colliding(float circle[4], float point[3])
 {
-	if (squareRoot(distance(circle, point)) > correct(circle[3]))
+	if (squareRoot(distance(circle, point)) > absolute(circle[3]))
 	{
 		return false;
 	}
@@ -42,10 +42,10 @@ float collision3D::CirclePoint::distance(float circle[4], float point[3])
 
 float collision3D::CirclePoint::distance(float a, float b)
 {
-	return correct(a - b);
+	return absolute(a - b);
 }
 
-float collision3D::CirclePoint::correct(float input)
+float collision3D::CirclePoint::absolute(float input)
 {
 	return input * input;
 }
