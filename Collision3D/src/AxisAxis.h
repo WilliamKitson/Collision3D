@@ -8,6 +8,10 @@ namespace collision3D
 		AxisAxis();
 		~AxisAxis();
 
+		void calculate(float[6], float[6]);
 		bool getCollision();
+
+	private:
+		bool collision;
 	};
 }
