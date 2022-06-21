@@ -61,7 +61,7 @@ float collision3D::AxisAxis::right(float axis[6])
 
 bool collision3D::AxisAxis::bottom(float a[6], float b[6])
 {
-	if (bottom(a) > b[1])
+	if (bottom(a) > top(b))
 	{
 		return false;
 	}
@@ -81,7 +81,7 @@ float collision3D::AxisAxis::bottom(float axis[6])
 
 bool collision3D::AxisAxis::top(float a[6], float b[6])
 {
-	if (top(a) < b[1])
+	if (top(a) < bottom(b))
 	{
 		return false;
 	}

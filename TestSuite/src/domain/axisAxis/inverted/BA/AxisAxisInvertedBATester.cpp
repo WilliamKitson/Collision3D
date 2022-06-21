@@ -14,6 +14,7 @@ std::string AxisAxisInvertedBATester::test()
 
 	output += testLeft();
 	output += testRight();
+	output += testBottom();
 
 	return output;
 }
@@ -26,4 +27,9 @@ std::string AxisAxisInvertedBATester::testLeft()
 std::string AxisAxisInvertedBATester::testRight()
 {
 	return AxisAxisInvertedBARightTest().test();
+}
+
+std::string AxisAxisInvertedBATester::testBottom()
+{
+	return AxisAxisInvertedBottomTest().test();
 }
