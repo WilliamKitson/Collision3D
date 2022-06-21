@@ -29,7 +29,7 @@ bool collision3D::AxisAxis::left(float a[6], float b[6])
 	return right(a, b);
 }
 
-bool collision3D::AxisAxis::left(float axis[6])
+float collision3D::AxisAxis::left(float axis[6])
 {
 	if (axis[3] < 0.0f)
 	{
@@ -41,12 +41,22 @@ bool collision3D::AxisAxis::left(float axis[6])
 
 bool collision3D::AxisAxis::right(float a[6], float b[6])
 {
-	if ((a[0] + a[3]) < b[0])
+	if (right(a) < b[0])
 	{
 		return false;
 	}
 
 	return bottom(a, b);
+}
+
+float collision3D::AxisAxis::right(float axis[6])
+{
+	if (axis[3] > 0.0f)
+	{
+		return axis[0] + axis[3];
+	}
+
+	return axis[0];
 }
 
 bool collision3D::AxisAxis::bottom(float a[6], float b[6])

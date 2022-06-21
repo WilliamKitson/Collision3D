@@ -13,8 +13,9 @@ namespace collision3D
 
 	private:
 		bool left(float[6], float[6]);
-		bool left(float[6]);
+		float left(float[6]);
 		bool right(float[6], float[6]);
+		float right(float[6]);
 		bool bottom(float[6], float[6]);
 		bool top(float[6], float[6]);
 		bool back(float[6], float[6]);

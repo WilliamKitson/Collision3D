@@ -264,6 +264,9 @@
     <ClCompile Include="src\domain\axisAxis\inverted\AxisAxisInvertedTester.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="src\domain\axisAxis\inverted\AB\AxisAxisInvertedABRightTest.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="src\domain\pointPoint\PointPointCollisionTest.h">
@@ -510,6 +513,9 @@
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="src\domain\axisAxis\inverted\AxisAxisInvertedTester.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\domain\axisAxis\inverted\AB\AxisAxisInvertedABRightTest.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
