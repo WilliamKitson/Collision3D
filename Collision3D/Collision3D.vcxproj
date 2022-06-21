@@ -155,6 +155,7 @@
     </PostBuildEvent>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="src\AxisAxis.cpp" />
     <ClCompile Include="src\AxisCircle.cpp" />
     <ClCompile Include="src\AxisPoint.cpp" />
     <ClCompile Include="src\CircleCircle.cpp" />
@@ -165,6 +166,7 @@
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="src\Axis.h" />
+    <ClInclude Include="src\AxisAxis.h" />
     <ClInclude Include="src\AxisCircle.h" />
     <ClInclude Include="src\AxisPoint.h" />
     <ClInclude Include="src\Circle.h" />
