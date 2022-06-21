@@ -31,7 +31,7 @@ bool collision3D::AxisPoint::left(float axis[6], float point[3])
 
 float collision3D::AxisPoint::left(float axis[6])
 {
-	if (axis[3] < 0)
+	if (axis[3] < 0.0f)
 	{
 		return axis[0] + axis[3];
 	}
@@ -51,7 +51,7 @@ bool collision3D::AxisPoint::right(float axis[6], float point[3])
 
 float collision3D::AxisPoint::right(float axis[6])
 {
-	if (axis[3] > 0)
+	if (axis[3] > 0.0f)
 	{
 		return axis[0] + axis[3];
 	}
@@ -71,7 +71,7 @@ bool collision3D::AxisPoint::bottom(float axis[6], float point[3])
 
 float collision3D::AxisPoint::bottom(float axis[6])
 {
-	if (axis[4] < 0)
+	if (axis[4] < 0.0f)
 	{
 		return axis[1] + axis[4];
 	}
@@ -91,7 +91,7 @@ bool collision3D::AxisPoint::top(float axis[6], float point[3])
 
 float collision3D::AxisPoint::top(float axis[6])
 {
-	if (axis[4] > 0)
+	if (axis[4] > 0.0f)
 	{
 		return axis[1] + axis[4];
 	}
@@ -111,7 +111,7 @@ bool collision3D::AxisPoint::back(float axis[6], float point[3])
 
 float collision3D::AxisPoint::back(float axis[6])
 {
-	if (axis[5] < 0)
+	if (axis[5] < 0.0f)
 	{
 		return axis[2] + axis[5];
 	}
@@ -131,7 +131,7 @@ bool collision3D::AxisPoint::front(float axis[6], float point[3])
 
 float collision3D::AxisPoint::front(float axis[6])
 {
-	if (axis[5] > 0)
+	if (axis[5] > 0.0f)
 	{
 		return axis[2] + axis[5];
 	}

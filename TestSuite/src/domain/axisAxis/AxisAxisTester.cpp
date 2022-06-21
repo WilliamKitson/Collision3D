@@ -15,6 +15,7 @@ std::string AxisAxisTester::test()
 	output += testDefault();
 	output += testCollision();
 	output += testEvasion();
+	output += testInverted();
 
 	return output;
 }
@@ -32,4 +33,9 @@ std::string AxisAxisTester::testCollision()
 std::string AxisAxisTester::testEvasion()
 {
 	return AxisAxisEvasionTester().test();
+}
+
+std::string AxisAxisTester::testInverted()
+{
+	return AxisAxisInvertedTester().test();
 }

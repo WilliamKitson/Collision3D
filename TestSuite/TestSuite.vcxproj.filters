@@ -255,6 +255,15 @@
     <ClCompile Include="src\domain\axisAxis\evasion\AxisAxisEvasionFrontTest.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="src\domain\axisAxis\inverted\AB\AxisAxisInvertedABLeftTest.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\domain\axisAxis\inverted\AB\AxisAxisInvertedABTester.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\domain\axisAxis\inverted\AxisAxisInvertedTester.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="src\domain\pointPoint\PointPointCollisionTest.h">
@@ -492,6 +501,15 @@
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="src\domain\axisAxis\evasion\AxisAxisEvasionFrontTest.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\domain\axisAxis\inverted\AB\AxisAxisInvertedABLeftTest.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\domain\axisAxis\inverted\AB\AxisAxisInvertedABTester.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\domain\axisAxis\inverted\AxisAxisInvertedTester.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
