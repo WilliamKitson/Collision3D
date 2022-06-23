@@ -18,6 +18,7 @@ namespace collision3D
 		float closestZ(float[6], float[4]);
 		float distance(float, float);
 		float absolute(float);
+		float squareRoot(float);
 
 	private:
 		bool collision;
