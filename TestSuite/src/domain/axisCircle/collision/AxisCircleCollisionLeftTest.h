@@ -10,4 +10,7 @@ public:
 	~AxisCircleCollisionLeftTest();
 
 	std::string test();
+
+private:
+	float distance(float, float);
 };

@@ -26,16 +26,7 @@ std::string AxisCircleCollisionLeftTest::test()
 		0.0f
 	};
 
-	float distanceX = axis[0] - circle[0];
-	distanceX *= distanceX;
-
-	float distanceY = axis[1] - circle[1];
-	distanceY *= distanceY;
-
-	float distanceZ = axis[2] - circle[2];
-	distanceZ *= distanceZ;
-
-	float input = distanceX + distanceY + distanceZ;
+	float input = distance(axis[0], circle[0]) + distance(axis[1], circle[1]) + distance(axis[2], circle[2]);
 	float output = input;
 
 	while ((output - input / output) > 0.000001f)
@@ -54,4 +45,10 @@ std::string AxisCircleCollisionLeftTest::test()
 	}
 
 	return "axis circle collision left test failed\n";
+}
+
+float AxisCircleCollisionLeftTest::distance(float a, float b)
+{
+	float output = a - b;
+	return output * output;
 }
