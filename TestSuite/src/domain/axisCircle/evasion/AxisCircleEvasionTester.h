@@ -7,6 +7,7 @@
 #include "AxisCircleEvasionBottomTest.h"
 #include "AxisCircleEvasionTopTest.h"
 #include "AxisCircleEvasionBackTest.h"
+#include "AxisCircleEvasionFrontTest.h"
 
 class AxisCircleEvasionTester
 {
@@ -22,4 +23,5 @@ private:
 	std::string testBottom();
 	std::string testTop();
 	std::string testBack();
+	std::string testFront();
 };
