@@ -13,4 +13,5 @@ public:
 
 private:
 	float distance(float, float);
+	float absolute(float);
 };
