@@ -13,6 +13,7 @@ namespace collision3D
 
 	private:
 		bool colliding(float[6], float[4]);
+		float closestX(float[6], float[4]);
 
 	private:
 		bool collision;
