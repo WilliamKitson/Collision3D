@@ -14,4 +14,5 @@ public:
 private:
 	float distance(float, float);
 	float absolute(float);
+	float squareRoot(float);
 };
