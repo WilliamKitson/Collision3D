@@ -84,6 +84,10 @@ float collision3D::AxisCircle::closestZ(float axis[6], float circle[4])
 
 float collision3D::AxisCircle::distance(float a, float b)
 {
-	float output = a - b;
-	return output * output;
+	return absolute(a - b);
+}
+
+float collision3D::AxisCircle::absolute(float input)
+{
+	return input * input;
 }
