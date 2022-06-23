@@ -11,7 +11,6 @@ collision3D::AxisCircle::~AxisCircle()
 
 void collision3D::AxisCircle::calculate(float[6], float[4])
 {
-	collision = true;
 }
 
 bool collision3D::AxisCircle::getCollision()
