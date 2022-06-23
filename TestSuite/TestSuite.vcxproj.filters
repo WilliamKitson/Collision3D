@@ -333,13 +333,7 @@
     <ClCompile Include="src\application\implimentation\evasion\ImplimentationEvasionAxisCircleTest.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="src\domain\axisCircle\inverted\AxisCircleInvertedLeftTest.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="src\domain\axisCircle\inverted\AxisCircleInvertedTester.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="src\domain\axisCircle\inverted\AxisCircleInvertedRightTest.cpp">
+    <ClCompile Include="src\domain\axisCircle\AxisCircleInvertedTest.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
@@ -659,13 +653,7 @@
     <ClInclude Include="src\application\implimentation\evasion\ImplimentationEvasionAxisCircleTest.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="src\domain\axisCircle\inverted\AxisCircleInvertedLeftTest.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="src\domain\axisCircle\inverted\AxisCircleInvertedTester.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="src\domain\axisCircle\inverted\AxisCircleInvertedRightTest.h">
+    <ClInclude Include="src\domain\axisCircle\AxisCircleInvertedTest.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
