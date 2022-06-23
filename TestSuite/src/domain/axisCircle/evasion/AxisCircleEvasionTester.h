@@ -4,6 +4,7 @@
 
 #include "AxisCircleEvasionLeftTest.h"
 #include "AxisCircleEvasionRightTest.h"
+#include "AxisCircleEvasionBottomTest.h"
 
 class AxisCircleEvasionTester
 {
@@ -16,4 +17,5 @@ public:
 private:
 	std::string testLeft();
 	std::string testRight();
+	std::string testBottom();
 };
