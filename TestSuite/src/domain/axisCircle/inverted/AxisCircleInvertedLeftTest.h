@@ -10,4 +10,7 @@ public:
 	~AxisCircleInvertedLeftTest();
 
 	std::string test();
+
+private:
+	float distance(float, float);
 };

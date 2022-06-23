@@ -26,16 +26,7 @@ std::string AxisCircleInvertedLeftTest::test()
 		0.0f
 	};
 
-	float distanceX = (axis[0] + axis[3]) - circle[0];
-	distanceX *= distanceX;
-
-	float distanceY = (axis[1] + axis[4]) - circle[1];
-	distanceY *= distanceY;
-
-	float distanceZ = (axis[2] + axis[5]) - circle[2];
-	distanceZ *= distanceZ;
-
-	float input = distanceX + distanceY + distanceZ;
+	float input = distance(axis[0] + axis[3], circle[0]) + distance(axis[1] + axis[4], circle[1]) + distance(axis[2] + axis[5], circle[2]);
 	float output = input;
 
 	while ((output - input / output) > 0.000001f)
@@ -54,4 +45,10 @@ std::string AxisCircleInvertedLeftTest::test()
 	}
 
 	return "axis circle inverted left test failed\n";
+}
+
+float AxisCircleInvertedLeftTest::distance(float a, float b)
+{
+	float output = a - b;
+	return output * output;
 }
