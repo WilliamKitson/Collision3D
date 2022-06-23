@@ -26,15 +26,7 @@ std::string AxisCircleCollisionTest::test()
 		0.0f
 	};
 
-	float input = distance(axis[0], circle[0]) + distance(axis[1], circle[1]) + distance(axis[2], circle[2]);
-	float output = input;
-
-	while ((output - input / output) > 0.000001f)
-	{
-		output = (output + input / output) / 2;
-	}
-
-	circle[3] = output;
+	circle[3] = squareRoot(distance(axis[0], circle[0]) + distance(axis[1], circle[1]) + distance(axis[2], circle[2]));
 
 	collision3D::AxisCircle unit;
 	unit.calculate(axis, circle);
@@ -55,4 +47,16 @@ float AxisCircleCollisionTest::distance(float a, float b)
 float AxisCircleCollisionTest::absolute(float input)
 {
 	return input * input;
+}
+
+float AxisCircleCollisionTest::squareRoot(float input)
+{
+	float output = input;
+
+	while ((output - input / output) > 0.000001f)
+	{
+		output = (output + input / output) / 2;
+	}
+
+	return output;
 }
