@@ -49,6 +49,10 @@ std::string AxisCircleCollisionLeftTest::test()
 
 float AxisCircleCollisionLeftTest::distance(float a, float b)
 {
-	float output = a - b;
-	return output * output;
+	return absolute(a - b);
+}
+
+float AxisCircleCollisionLeftTest::absolute(float input)
+{
+	return input * input;
 }
