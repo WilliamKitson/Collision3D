@@ -306,6 +306,12 @@
     <ClCompile Include="src\domain\axisCircle\AxisCircleEvasionTest.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="src\domain\axisCircle\collision\AxisCircleCollisionLeftTest.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\domain\axisCircle\collision\AxisCircleCollisionTester.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="src\domain\pointPoint\PointPointCollisionTest.h">
@@ -594,6 +600,12 @@
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="src\domain\axisCircle\AxisCircleEvasionTest.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\domain\axisCircle\collision\AxisCircleCollisionLeftTest.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\domain\axisCircle\collision\AxisCircleCollisionTester.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>

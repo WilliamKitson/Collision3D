@@ -4,6 +4,7 @@
 
 #include "AxisCircleDefaultTest.h"
 #include "AxisCircleEvasionTest.h"
+#include "collision/AxisCircleCollisionTester.h"
 
 class AxisCircleTester
 {
@@ -16,4 +17,5 @@ public:
 private:
 	std::string testDefault();
 	std::string testEvasion();
+	std::string testCollision();
 };
