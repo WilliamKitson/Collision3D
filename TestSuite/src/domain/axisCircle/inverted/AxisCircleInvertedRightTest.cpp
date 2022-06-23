@@ -26,15 +26,7 @@ std::string AxisCircleInvertedRightTest::test()
 		0.0f
 	};
 
-	float input = distance(axis[0], circle[0]) + distance(axis[1], circle[1]) + distance(axis[2], circle[2]);
-	float output = input;
-
-	while ((output - input / output) > 0.000001f)
-	{
-		output = (output + input / output) / 2;
-	}
-
-	circle[3] = output * -1.0f;
+	circle[3] = squareRoot(distance(axis[0], circle[0]) + distance(axis[1], circle[1]) + distance(axis[2], circle[2])) * -1.0f;
 
 	collision3D::AxisCircle unit;
 	unit.calculate(axis, circle);
@@ -55,4 +47,16 @@ float AxisCircleInvertedRightTest::distance(float a, float b)
 float AxisCircleInvertedRightTest::absolute(float input)
 {
 	return input * input;
+}
+
+float AxisCircleInvertedRightTest::squareRoot(float input)
+{
+	float output = input;
+
+	while ((output - input / output) > 0.000001f)
+	{
+		output = (output + input / output) / 2;
+	}
+
+	return output;
 }
