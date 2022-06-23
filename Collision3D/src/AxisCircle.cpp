@@ -27,18 +27,7 @@ bool collision3D::AxisCircle::colliding(float axis[6], float circle[4])
 	float distanceY = closestY(axis, circle) - circle[1];
 	distanceY *= distanceY;
 
-	float closestZ = circle[2];
-
-	if (circle[2] < axis[2])
-	{
-		closestZ = axis[2];
-	}
-	else if (circle[2] > axis[2] + axis[5])
-	{
-		closestZ = axis[1] + axis[5];
-	}
-
-	float distanceZ = closestZ - circle[2];
+	float distanceZ = closestZ(axis, circle) - circle[2];
 	distanceZ *= distanceZ;
 
 	float input = distanceX + distanceY + distanceZ;
@@ -78,10 +67,26 @@ float collision3D::AxisCircle::closestY(float axis[6], float circle[4])
 	{
 		return axis[1];
 	}
-	else if (circle[1] > axis[1] + axis[4])
+
+	if (circle[1] > axis[1] + axis[4])
 	{
 		return axis[1] + axis[4];
 	}
 
 	return circle[1];
+}
+
+float collision3D::AxisCircle::closestZ(float axis[6], float circle[4])
+{
+	if (circle[2] < axis[2])
+	{
+		return axis[2];
+	}
+
+	if (circle[2] > axis[2] + axis[5])
+	{
+		return axis[2] + axis[5];
+	}
+
+	return circle[2];
 }
