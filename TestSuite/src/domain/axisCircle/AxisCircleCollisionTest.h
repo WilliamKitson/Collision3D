@@ -3,11 +3,11 @@
 #include <string>
 #include "AxisCircle.h"
 
-class AxisCircleEvasionTest
+class AxisCircleCollisionTest
 {
 public:
-	AxisCircleEvasionTest();
-	~AxisCircleEvasionTest();
+	AxisCircleCollisionTest();
+	~AxisCircleCollisionTest();
 
 	std::string test();
 };
