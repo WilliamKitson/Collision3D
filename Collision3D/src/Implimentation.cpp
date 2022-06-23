@@ -111,9 +111,32 @@ void collision3D::Implimentation::calculate(Axis a, Point b)
 	collision = output.getCollision();
 }
 
-void collision3D::Implimentation::calculate(Axis, Circle)
+void collision3D::Implimentation::calculate(Axis a, Circle b)
 {
-	collision = true;
+	float axis[6]{
+		a.xpos,
+		a.ypos,
+		a.zpos,
+		a.width,
+		a.height,
+		a.depth
+	};
+
+	float circle[4]{
+		b.xpos,
+		b.ypos,
+		b.zpos,
+		b.radius
+	};
+
+	AxisCircle output;
+
+	output.calculate(
+		axis,
+		circle
+	);
+
+	collision = output.getCollision();
 }
 
 void collision3D::Implimentation::calculate(Axis a, Axis b)

@@ -6,6 +6,7 @@
 #include "ImplimentationEvasionCirclePointTest.h"
 #include "ImplimentationEvasionCircleCircleTest.h"
 #include "ImplimentationEvasionAxisPointTest.h"
+#include "ImplimentationEvasionAxisCircleTest.h"
 #include "ImplimentationEvasionAxisAxisTest.h"
 
 class ImplimentationEvasionTester
@@ -21,5 +22,6 @@ private:
 	std::string testCirclePoint();
 	std::string testCircleCircle();
 	std::string testAxisPoint();
+	std::string testAxisCircle();
 	std::string testAxisAxis();
 };
