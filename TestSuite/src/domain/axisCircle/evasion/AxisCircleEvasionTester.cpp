@@ -15,6 +15,7 @@ std::string AxisCircleEvasionTester::test()
 	output += testLeft();
 	output += testRight();
 	output += testBottom();
+	output += testTop();
 
 	return output;
 }
@@ -32,4 +33,9 @@ std::string AxisCircleEvasionTester::testRight()
 std::string AxisCircleEvasionTester::testBottom()
 {
 	return AxisCircleEvasionBottomTest().test();
+}
+
+std::string AxisCircleEvasionTester::testTop()
+{
+	return AxisCircleEvasionTopTest().test();
 }
