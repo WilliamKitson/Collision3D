@@ -6,6 +6,7 @@
 #include "ImplimentationCollisionCirclePointTest.h"
 #include "ImplimentationCollisionCircleCircleTest.h"
 #include "ImplimentationCollisionAxisPointTest.h"
+#include "ImplimentationCollisionAxisCircleTest.h"
 #include "ImplimentationCollisionAxisAxisTest.h"
 
 class ImplimentationCollisionTester
@@ -21,5 +22,6 @@ private:
 	std::string testCirclePoint();
 	std::string testCircleCircle();
 	std::string testAxisPoint();
+	std::string testAxisCircle();
 	std::string testAxisAxis();
 };
