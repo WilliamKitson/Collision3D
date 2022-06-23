@@ -11,7 +11,7 @@ AxisCircleEvasionLeftTest::~AxisCircleEvasionLeftTest()
 std::string AxisCircleEvasionLeftTest::test()
 {
 	float axis[6]{
-		0.0f,
+		1.0f,
 		0.0f,
 		0.0f,
 		0.0f,
@@ -20,9 +20,9 @@ std::string AxisCircleEvasionLeftTest::test()
 	};
 
 	float circle[4]{
-		1.0f,
-		1.0f,
-		1.0f,
+		0.0f,
+		0.0f,
+		0.0f,
 		0.0f
 	};
 
