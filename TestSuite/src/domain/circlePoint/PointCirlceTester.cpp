@@ -37,5 +37,5 @@ std::string PointCircleTester::testEvasion()
 
 std::string PointCircleTester::testInverted()
 {
-	return CirclePointInvertedTest().test();
+	return CirclePointInvertedTester().test();
 }

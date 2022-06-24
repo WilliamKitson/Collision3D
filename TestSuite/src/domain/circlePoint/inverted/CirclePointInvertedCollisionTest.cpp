@@ -1,25 +1,25 @@
-#include "CirclePointInvertedTest.h"
+#include "CirclePointInvertedCollisionTest.h"
 
-CirclePointInvertedTest::CirclePointInvertedTest()
+CirclePointInvertedCollisionTest::CirclePointInvertedCollisionTest()
 	: itterations{ 4 }
 {
 }
 
-CirclePointInvertedTest::~CirclePointInvertedTest()
+CirclePointInvertedCollisionTest::~CirclePointInvertedCollisionTest()
 {
 }
 
-std::string CirclePointInvertedTest::test()
+std::string CirclePointInvertedCollisionTest::test()
 {
 	if (successes() == itterations)
 	{
 		return std::string();
 	}
 
-	return "circle point inverted test failed\n";
+	return "circle point inverted collision test failed\n";
 }
 
-int CirclePointInvertedTest::successes()
+int CirclePointInvertedCollisionTest::successes()
 {
 	int output = 0;
 
@@ -31,7 +31,7 @@ int CirclePointInvertedTest::successes()
 	return output;
 }
 
-bool CirclePointInvertedTest::collision(float input)
+bool CirclePointInvertedCollisionTest::collision(float input)
 {
 	float circle[4]{
 		input,
@@ -54,22 +54,22 @@ bool CirclePointInvertedTest::collision(float input)
 	return unit.getCollision();
 }
 
-float CirclePointInvertedTest::invert(float input)
+float CirclePointInvertedCollisionTest::invert(float input)
 {
 	return input * -1.0f;
 }
 
-float CirclePointInvertedTest::distance(float a, float b)
+float CirclePointInvertedCollisionTest::distance(float a, float b)
 {
 	return distance(a - b);
 }
 
-float CirclePointInvertedTest::distance(float input)
+float CirclePointInvertedCollisionTest::distance(float input)
 {
 	return input * input;
 }
 
-float CirclePointInvertedTest::squareRoot(float input)
+float CirclePointInvertedCollisionTest::squareRoot(float input)
 {
 	float output = input;
 
