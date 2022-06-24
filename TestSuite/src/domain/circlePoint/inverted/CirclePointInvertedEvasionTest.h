@@ -13,6 +13,7 @@ public:
 
 private:
 	int successes();
+	bool collision(float);
 
 private:
 	int itterations;
