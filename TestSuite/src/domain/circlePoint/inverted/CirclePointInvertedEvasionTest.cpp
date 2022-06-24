@@ -69,6 +69,10 @@ float CirclePointInvertedEvasonTest::invert(float input)
 
 float CirclePointInvertedEvasonTest::distance(float a, float b)
 {
-	float output = a - b;
-	return output;
+	return distance(a - b);
+}
+
+float CirclePointInvertedEvasonTest::distance(float input)
+{
+	return input * input;
 }
