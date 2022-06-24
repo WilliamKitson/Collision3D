@@ -46,16 +46,7 @@ bool CirclePointInvertedEvasonTest::collision(float input)
 		invert(input)
 	};
 
-	float distanceX = circle[0] - point[0];
-	distanceX *= distanceX;
-
-	float distanceY = circle[1] - point[1];
-	distanceY *= distanceY;
-
-	float distanceZ = circle[2] - point[2];
-	distanceZ *= distanceZ;
-
-	float temp = distanceX + distanceY + distanceZ;
+	float temp = distance(circle[0], point[0]) + distance(circle[1], point[1]) + distance(circle[2], point[2]);
 	float squareRoot = temp;
 
 	while ((squareRoot - temp / squareRoot) > 0.000001f)
@@ -74,4 +65,10 @@ bool CirclePointInvertedEvasonTest::collision(float input)
 float CirclePointInvertedEvasonTest::invert(float input)
 {
 	return -input;
+}
+
+float CirclePointInvertedEvasonTest::distance(float a, float b)
+{
+	float output = a - b;
+	return output;
 }
