@@ -41,22 +41,17 @@ bool CirclePointInvertedCollisionTest::collision(float input)
 	};
 
 	float point[3]{
-		invert(input),
-		invert(input),
-		invert(input)
+		-input,
+		-input,
+		-input
 	};
 
-	circle[3] = invert(squareRoot(distance(point[0], circle[0]) + distance(point[1], circle[1]) + distance(point[2], circle[2])));
+	circle[3] = -squareRoot(distance(point[0], circle[0]) + distance(point[1], circle[1]) + distance(point[2], circle[2]));
 
 	collision3D::CirclePoint unit;
 	unit.calculate(circle, point);
 
 	return unit.getCollision();
-}
-
-float CirclePointInvertedCollisionTest::invert(float input)
-{
-	return -input;
 }
 
 float CirclePointInvertedCollisionTest::distance(float a, float b)
