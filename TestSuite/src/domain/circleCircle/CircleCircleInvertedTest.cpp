@@ -61,8 +61,12 @@ bool CircleCircleInvertedTest::collision(float input)
 
 float CircleCircleInvertedTest::distance(float a, float b)
 {
-	float output = a - b;
-	return output * output;
+	return distance(a - b);
+}
+
+float CircleCircleInvertedTest::distance(float input)
+{
+	return input * input;
 }
 
 float CircleCircleInvertedTest::squareRoot(float input)
