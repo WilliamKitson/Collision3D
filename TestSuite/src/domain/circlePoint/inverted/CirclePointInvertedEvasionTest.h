@@ -14,6 +14,7 @@ public:
 private:
 	int successes();
 	bool collision(float);
+	float invert(float);
 
 private:
 	int itterations;
