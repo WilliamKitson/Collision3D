@@ -15,5 +15,4 @@ private:
 	float distance(float, float);
 	float distance(float);
 	float squareRoot(float);
-	float invert(float);
 };
