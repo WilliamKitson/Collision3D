@@ -46,15 +46,7 @@ bool CirclePointInvertedEvasonTest::collision(float input)
 		invert(input)
 	};
 
-	float temp = distance(circle[0], point[0]) + distance(circle[1], point[1]) + distance(circle[2], point[2]);
-	float squareRoot = temp;
-
-	while ((squareRoot - temp / squareRoot) > 0.000001f)
-	{
-		squareRoot = (squareRoot + temp / squareRoot) / 2;
-	}
-
-	circle[3] = invert(squareRoot - 0.1f);
+	circle[3] = invert(squareRoot(distance(circle[0], point[0]) + distance(circle[1], point[1]) + distance(circle[2], point[2]))) + 0.1f;
 
 	collision3D::CirclePoint unit;
 	unit.calculate(circle, point);
@@ -75,4 +67,16 @@ float CirclePointInvertedEvasonTest::distance(float a, float b)
 float CirclePointInvertedEvasonTest::distance(float input)
 {
 	return input * input;
+}
+
+float CirclePointInvertedEvasonTest::squareRoot(float input)
+{
+	float output = input;
+
+	while ((output - input / output) > 0.000001f)
+	{
+		output = (output + input / output) / 2;
+	}
+
+	return output;
 }

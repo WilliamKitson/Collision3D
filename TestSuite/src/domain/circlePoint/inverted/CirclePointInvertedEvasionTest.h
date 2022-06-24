@@ -17,6 +17,7 @@ private:
 	float invert(float);
 	float distance(float, float);
 	float distance(float);
+	float squareRoot(float);
 
 private:
 	int itterations;
