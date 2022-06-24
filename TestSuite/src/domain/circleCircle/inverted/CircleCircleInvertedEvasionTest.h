@@ -15,6 +15,7 @@ private:
 	int successes();
 	bool collision(float);
 	float distance(float, float);
+	float distance(float);
 
 private:
 	int itterations;
