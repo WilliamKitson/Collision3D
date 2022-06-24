@@ -61,10 +61,10 @@ float CirclePointInvertedTest::invert(float input)
 
 float CirclePointInvertedTest::distance(float a, float b)
 {
-	return absolute(a - b);
+	return distance(a - b);
 }
 
-float CirclePointInvertedTest::absolute(float input)
+float CirclePointInvertedTest::distance(float input)
 {
 	return input * input;
 }
