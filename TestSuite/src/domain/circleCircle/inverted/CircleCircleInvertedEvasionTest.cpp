@@ -11,6 +11,16 @@ CircleCircleInvertedEvasionTest::~CircleCircleInvertedEvasionTest()
 
 std::string CircleCircleInvertedEvasionTest::test()
 {
+	if (successes() == itterations)
+	{
+		return std::string();
+	}
+
+	return "circle circle inverted evasion test failed\n";
+}
+
+int CircleCircleInvertedEvasionTest::successes()
+{
 	int successes = 1;
 
 	for (int i{ 1 }; i < itterations; i++)
@@ -49,8 +59,8 @@ std::string CircleCircleInvertedEvasionTest::test()
 		output *= 0.5f;
 		output -= 0.1f;
 
-		a[3] = output;
-		b[3] = output;
+		a[3] = -output;
+		b[3] = -output;
 
 		collision3D::CircleCircle unit;
 		unit.calculate(a, b);
@@ -58,10 +68,5 @@ std::string CircleCircleInvertedEvasionTest::test()
 		successes += !unit.getCollision();
 	}
 
-	if (successes == itterations)
-	{
-		return std::string();
-	}
-
-	return "circle circle inverted evasion test failed\n";
+	return successes;
 }
