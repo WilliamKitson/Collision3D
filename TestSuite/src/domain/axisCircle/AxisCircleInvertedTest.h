@@ -13,7 +13,7 @@ public:
 
 private:
 	float distance(float, float);
-	float absolute(float);
+	float distance(float);
 	float squareRoot(float);
 	float invert(float);
 };

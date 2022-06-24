@@ -41,10 +41,10 @@ std::string AxisCircleInvertedTest::test()
 
 float AxisCircleInvertedTest::distance(float a, float b)
 {
-	return absolute(a - b);
+	return distance(a - b);
 }
 
-float AxisCircleInvertedTest::absolute(float input)
+float AxisCircleInvertedTest::distance(float input)
 {
 	return input * input;
 }
