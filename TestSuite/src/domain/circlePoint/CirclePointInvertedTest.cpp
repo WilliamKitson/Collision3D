@@ -25,27 +25,33 @@ int CirclePointInvertedTest::successes()
 
 	for (int i{ 0 }; i < itterations; i++)
 	{
-		float circle[4]{
-			(float)i * -1,
-			(float)i * -1,
-			(float)i * -1,
-			0.0f
-		};
-
-		float point[3]{
-			(float)i,
-			(float)i,
-			(float)i
-		};
-
-		circle[3] = squareRoot(distance(point[0], circle[0]) + distance(point[1], circle[1]) + distance(point[2], circle[2])) * -1.0f;
-
-		collision3D::CirclePoint unit;
-		unit.calculate(circle, point);
-		output += unit.getCollision() == true;
+		output += collision((float)i);
 	}
 
 	return output;
+}
+
+bool CirclePointInvertedTest::collision(float input)
+{
+	float circle[4]{
+		input,
+		input,
+		input,
+		0.0f
+	};
+
+	float point[3]{
+		input * -1.0f,
+		input * -1.0f,
+		input * -1.0f,
+	};
+
+	circle[3] = squareRoot(distance(point[0], circle[0]) + distance(point[1], circle[1]) + distance(point[2], circle[2]));
+
+	collision3D::CirclePoint unit;
+	unit.calculate(circle, point);
+
+	return unit.getCollision();
 }
 
 float CirclePointInvertedTest::distance(float a, float b)
