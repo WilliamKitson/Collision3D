@@ -56,7 +56,7 @@ bool CirclePointInvertedCollisionTest::collision(float input)
 
 float CirclePointInvertedCollisionTest::invert(float input)
 {
-	return input * -1.0f;
+	return -input;
 }
 
 float CirclePointInvertedCollisionTest::distance(float a, float b)
