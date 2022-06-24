@@ -25,32 +25,38 @@ int CircleCircleInvertedTest::successes()
 
 	for (int i{ 0 }; i < itterations; i++)
 	{
-		float a[4]{
-			(float)i * -1,
-			(float)i * -1,
-			(float)i * -1,
-			0.0f
-		};
-
-		float b[4]{
-			(float)i,
-			(float)i,
-			(float)i,
-			0.0f
-		};
-
-		float radius = squareRoot(distance(a[0], b[0]) + distance(a[1], b[1]) + distance(a[2], b[2]));
-		radius *= -0.5f;
-
-		a[3] = radius;
-		b[3] = radius;
-
-		collision3D::CircleCircle unit;
-		unit.calculate(a, b);
-		output += unit.getCollision() == true;
+		output += collision((float)i);
 	}
 
 	return output;
+}
+
+bool CircleCircleInvertedTest::collision(float input)
+{
+	float a[4]{
+		input,
+		input,
+		input,
+		0.0f
+	};
+
+	float b[4]{
+		-input,
+		-input,
+		-input,
+		0.0f
+	};
+
+	float radius = squareRoot(distance(a[0], b[0]) + distance(a[1], b[1]) + distance(a[2], b[2]));
+	radius *= -0.5f;
+
+	a[3] = radius;
+	b[3] = radius;
+
+	collision3D::CircleCircle unit;
+	unit.calculate(a, b);
+	
+	return unit.getCollision();
 }
 
 float CircleCircleInvertedTest::distance(float a, float b)
