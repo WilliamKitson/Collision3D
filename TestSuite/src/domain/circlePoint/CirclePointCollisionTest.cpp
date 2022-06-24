@@ -61,8 +61,12 @@ float CirclePointCollisionTest::invert(float input)
 
 float CirclePointCollisionTest::distance(float a, float b)
 {
-	float output = a - b;
-	return output * output;
+	return absolute(a - b);
+}
+
+float CirclePointCollisionTest::absolute(float input)
+{
+	return input * input;
 }
 
 float CirclePointCollisionTest::squareRoot(float input)
