@@ -14,6 +14,7 @@ public:
 private:
 	int successes();
 	bool collision(float);
+	float invert(float);
 	float distance(float, float);
 	float squareRoot(float);
 
