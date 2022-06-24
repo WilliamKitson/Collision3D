@@ -52,9 +52,9 @@ float collision3D::AxisCircle::distance(float input)
 
 float collision3D::AxisCircle::closestX(float axis[6], float circle[4])
 {
-	if (circle[0] < axis[0])
+	if (circle[0] < left(axis))
 	{
-		return axis[0];
+		return left(axis);
 	}
 
 	else if (circle[0] > axis[0] + axis[3])
@@ -63,6 +63,11 @@ float collision3D::AxisCircle::closestX(float axis[6], float circle[4])
 	}
 
 	return circle[0];
+}
+
+float collision3D::AxisCircle::left(float input[6])
+{
+	return input[0];
 }
 
 float collision3D::AxisCircle::closestY(float axis[6], float circle[4])
