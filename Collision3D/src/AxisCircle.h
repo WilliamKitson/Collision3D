@@ -21,6 +21,7 @@ namespace collision3D
 		float right(float[6]);
 		float closestY(float[6], float[4]);
 		float top(float[6]);
+		float bottom(float[6]);
 		float closestZ(float[6], float[4]);
 		float squareRoot(float);
 		float absolute(float);
