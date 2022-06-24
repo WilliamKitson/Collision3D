@@ -15,7 +15,7 @@ namespace collision3D
 		bool colliding(float[6], float[4]);
 		float distance(float[6], float[4]);
 		float distance(float, float);
-		float absolute(float);
+		float distance(float);
 		float closestX(float[6], float[4]);
 		float closestY(float[6], float[4]);
 		float closestZ(float[6], float[4]);

@@ -21,7 +21,7 @@ bool collision3D::AxisCircle::getCollision()
 
 bool collision3D::AxisCircle::colliding(float axis[6], float circle[4])
 {
-	if (squareRoot(distance(axis, circle)) > absolute(circle[3]))
+	if (squareRoot(distance(axis, circle)) > distance(circle[3]))
 	{
 		return false;
 	}
@@ -42,10 +42,10 @@ float collision3D::AxisCircle::distance(float axis[6], float circle[4])
 
 float collision3D::AxisCircle::distance(float a, float b)
 {
-	return absolute(a - b);
+	return distance(a - b);
 }
 
-float collision3D::AxisCircle::absolute(float input)
+float collision3D::AxisCircle::distance(float input)
 {
 	return input * input;
 }
