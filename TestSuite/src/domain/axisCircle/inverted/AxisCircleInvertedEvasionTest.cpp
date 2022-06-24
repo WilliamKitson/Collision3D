@@ -49,15 +49,7 @@ bool AxisCircleInvertedEvasionTest::collision(float input)
 		0.0f
 	};
 
-	float temp = distance(axis[0], circle[0]) + distance(axis[1], circle[1]) + distance(axis[2], circle[2]);
-	float squereRoot = temp;
-
-	while ((squereRoot - temp / squereRoot) > 0.000001f)
-	{
-		squereRoot = (squereRoot + temp / squereRoot) / 2;
-	}
-
-	circle[3] = -squereRoot + 0.1f;
+	circle[3] = -squareRoot(distance(axis[0], circle[0]) + distance(axis[1], circle[1]) + distance(axis[2], circle[2])) + 0.1f;
 
 	collision3D::AxisCircle unit;
 	unit.calculate(axis, circle);
@@ -73,4 +65,16 @@ float AxisCircleInvertedEvasionTest::distance(float a, float b)
 float AxisCircleInvertedEvasionTest::distance(float input)
 {
 	return input * input;
+}
+
+float AxisCircleInvertedEvasionTest::squareRoot(float input)
+{
+	float output = input;
+
+	while ((output - input / output) > 0.000001f)
+	{
+		output = (output + input / output) / 2;
+	}
+
+	return output;
 }
