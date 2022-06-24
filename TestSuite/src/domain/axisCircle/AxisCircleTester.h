@@ -4,8 +4,8 @@
 
 #include "AxisCircleDefaultTest.h"
 #include "AxisCircleCollisionTest.h"
-#include "AxisCircleInvertedTest.h"
 #include "evasion/AxisCircleEvasionTester.h"
+#include "inverted/AxisCircleInvertedTester.h"
 
 class AxisCircleTester
 {
@@ -18,6 +18,6 @@ public:
 private:
 	std::string testDefault();
 	std::string testCollision();
-	std::string testInverted();
 	std::string testEvasion();
+	std::string testInverted();
 };

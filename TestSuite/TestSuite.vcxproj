@@ -191,7 +191,6 @@
     <ClCompile Include="src\domain\axisAxis\inverted\BA\AxisAxisInvertedBATopTest.cpp" />
     <ClCompile Include="src\domain\axisCircle\AxisCircleCollisionTest.cpp" />
     <ClCompile Include="src\domain\axisCircle\AxisCircleDefaultTest.cpp" />
-    <ClCompile Include="src\domain\axisCircle\AxisCircleInvertedTest.cpp" />
     <ClCompile Include="src\domain\axisCircle\AxisCircleTester.cpp" />
     <ClCompile Include="src\domain\axisCircle\evasion\AxisCircleEvasionBackTest.cpp" />
     <ClCompile Include="src\domain\axisCircle\evasion\AxisCircleEvasionBottomTest.cpp" />
@@ -200,6 +199,8 @@
     <ClCompile Include="src\domain\axisCircle\evasion\AxisCircleEvasionRightTest.cpp" />
     <ClCompile Include="src\domain\axisCircle\evasion\AxisCircleEvasionTester.cpp" />
     <ClCompile Include="src\domain\axisCircle\evasion\AxisCircleEvasionTopTest.cpp" />
+    <ClCompile Include="src\domain\axisCircle\inverted\AxisCircleInvertedCollisionTest.cpp" />
+    <ClCompile Include="src\domain\axisCircle\inverted\AxisCircleInvertedTester.cpp" />
     <ClCompile Include="src\domain\axisPoint\AxisPointCollisionTest.cpp" />
     <ClCompile Include="src\domain\axisPoint\AxisPointDefaultTest.cpp" />
     <ClCompile Include="src\domain\axisPoint\AxisPointTester.cpp" />
@@ -304,7 +305,6 @@
     <ClInclude Include="src\domain\axisAxis\inverted\BA\AxisAxisInvertedBATopTest.h" />
     <ClInclude Include="src\domain\axisCircle\AxisCircleCollisionTest.h" />
     <ClInclude Include="src\domain\axisCircle\AxisCircleDefaultTest.h" />
-    <ClInclude Include="src\domain\axisCircle\AxisCircleInvertedTest.h" />
     <ClInclude Include="src\domain\axisCircle\AxisCircleTester.h" />
     <ClInclude Include="src\domain\axisCircle\evasion\AxisCircleEvasionBackTest.h" />
     <ClInclude Include="src\domain\axisCircle\evasion\AxisCircleEvasionBottomTest.h" />
@@ -313,6 +313,8 @@
     <ClInclude Include="src\domain\axisCircle\evasion\AxisCircleEvasionRightTest.h" />
     <ClInclude Include="src\domain\axisCircle\evasion\AxisCircleEvasionTester.h" />
     <ClInclude Include="src\domain\axisCircle\evasion\AxisCircleEvasionTopTest.h" />
+    <ClInclude Include="src\domain\axisCircle\inverted\AxisCircleInvertedCollisionTest.h" />
+    <ClInclude Include="src\domain\axisCircle\inverted\AxisCircleInvertedTester.h" />
     <ClInclude Include="src\domain\axisPoint\AxisPointCollisionTest.h" />
     <ClInclude Include="src\domain\axisPoint\AxisPointDefaultTest.h" />
     <ClInclude Include="src\domain\axisPoint\AxisPointTester.h" />
