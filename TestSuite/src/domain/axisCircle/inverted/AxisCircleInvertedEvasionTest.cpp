@@ -11,6 +11,16 @@ AxisCircleInvertedEvasionTest::~AxisCircleInvertedEvasionTest()
 
 std::string AxisCircleInvertedEvasionTest::test()
 {
+	if (successes() == itterations)
+	{
+		return std::string();
+	}
+
+	return "axis circle inverted evasion test failed\n";
+}
+
+int AxisCircleInvertedEvasionTest::successes()
+{
 	int successes = 1;
 
 	for (int i{ 1 }; i < itterations; i++)
@@ -56,10 +66,5 @@ std::string AxisCircleInvertedEvasionTest::test()
 		successes += !unit.getCollision();
 	}
 
-	if (successes == itterations)
-	{
-		return std::string();
-	}
-
-	return "axis circle inverted evasion test failed\n";
+	return successes;
 }
