@@ -345,6 +345,9 @@
     <ClCompile Include="src\domain\circleCircle\inverted\CircleCircleInvertedTester.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="src\domain\circleCircle\inverted\CircleCircleInvertedEvasionTest.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="src\domain\pointPoint\PointPointCollisionTest.h">
@@ -672,6 +675,9 @@
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="src\domain\circleCircle\inverted\CircleCircleInvertedTester.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\domain\circleCircle\inverted\CircleCircleInvertedEvasionTest.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>

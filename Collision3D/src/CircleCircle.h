@@ -16,8 +16,9 @@ namespace collision3D
 		float distance(float[4], float[4]);
 		float distance(float, float);
 		float distance(float);
-		float radius(float[4], float[4]);
 		float squareRoot(float);
+		float radius(float[4], float[4]);
+		float absolute(float);
 
 	private:
 		bool collision;

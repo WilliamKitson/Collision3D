@@ -1,7 +1,9 @@
 #pragma once
 
 #include <string>
+
 #include "CircleCircleInvertedCollisionTest.h"
+#include "CircleCircleInvertedEvasionTest.h"
 
 class CircleCircleInvertedTester
 {
@@ -13,4 +15,5 @@ public:
 
 private:
 	std::string testCollision();
+	std::string testEvasion();
 };

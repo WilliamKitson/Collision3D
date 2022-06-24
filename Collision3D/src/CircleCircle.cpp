@@ -50,11 +50,6 @@ float collision3D::CircleCircle::distance(float input)
 	return input * input;
 }
 
-float collision3D::CircleCircle::radius(float a[4], float b[4])
-{
-	return distance(a[3]) + distance(b[3]);
-}
-
 float collision3D::CircleCircle::squareRoot(float input)
 {
 	float output = input;
@@ -65,4 +60,19 @@ float collision3D::CircleCircle::squareRoot(float input)
 	}
 
 	return output;
+}
+
+float collision3D::CircleCircle::radius(float a[4], float b[4])
+{
+	return absolute(a[3]) + absolute(b[3]);
+}
+
+float collision3D::CircleCircle::absolute(float input)
+{
+	if (input < 0.0f)
+	{
+		return -input;
+	}
+
+	return input;
 }
