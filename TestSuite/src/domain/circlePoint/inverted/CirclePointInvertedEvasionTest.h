@@ -12,5 +12,8 @@ public:
 	std::string test();
 
 private:
+	int successes();
+
+private:
 	int itterations;
 };

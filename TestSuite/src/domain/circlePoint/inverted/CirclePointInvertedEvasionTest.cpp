@@ -11,7 +11,17 @@ CirclePointInvertedEvasonTest::~CirclePointInvertedEvasonTest()
 
 std::string CirclePointInvertedEvasonTest::test()
 {
-	int successes = 0;
+	if (successes() == itterations)
+	{
+		return std::string();
+	}
+
+	return "circle point inverted evasion test failed\n";
+}
+
+int CirclePointInvertedEvasonTest::successes()
+{
+	int output = 1;
 
 	for (int i{ 1 }; i < itterations; i++)
 	{
@@ -38,25 +48,20 @@ std::string CirclePointInvertedEvasonTest::test()
 		distanceZ *= distanceZ;
 
 		float input = distanceX + distanceY + distanceZ;
-		float output = input;
+		float squareRoot = input;
 
-		while ((output - input / output) > 0.000001f)
+		while ((squareRoot - input / squareRoot) > 0.000001f)
 		{
-			output = (output + input / output) / 2;
+			squareRoot = (squareRoot + input / squareRoot) / 2;
 		}
 
-		circle[3] = output - 0.1f;
+		circle[3] = squareRoot - 0.1f;
 
 		collision3D::CirclePoint unit;
 		unit.calculate(circle, point);
 
-		successes += !unit.getCollision();
+		output += !unit.getCollision();
 	}
 
-	if (successes == itterations - 1)
-	{
-		return std::string();
-	}
-
-	return "circle point inverted evasion test failed\n";
+	return output;
 }
