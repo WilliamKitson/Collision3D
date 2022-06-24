@@ -25,30 +25,36 @@ int AxisCircleInvertedTest::successes()
 
 	for (int i{ 0 }; i < itterations; i++)
 	{
-		float axis[6]{
-			(float)i,
-			(float)i,
-			(float)i,
-			0.0f,
-			0.0f,
-			0.0f
-		};
-
-		float circle[4]{
-			-(float)i,
-			-(float)i,
-			-(float)i,
-			0.0f
-		};
-
-		circle[3] = -squareRoot(distance(axis[0], circle[0]) + distance(axis[1], circle[1]) + distance(axis[2], circle[2]));
-
-		collision3D::AxisCircle unit;
-		unit.calculate(axis, circle);
-		output += unit.getCollision();
+		output += collision((float)i);
 	}
 
 	return output;
+}
+
+bool AxisCircleInvertedTest::collision(float input)
+{
+	float axis[6]{
+		input,
+		input,
+		input,
+		0.0f,
+		0.0f,
+		0.0f
+	};
+
+	float circle[4]{
+		-input,
+		-input,
+		-input,
+		0.0f
+	};
+
+	circle[3] = -squareRoot(distance(axis[0], circle[0]) + distance(axis[1], circle[1]) + distance(axis[2], circle[2]));
+
+	collision3D::AxisCircle unit;
+	unit.calculate(axis, circle);
+
+	return unit.getCollision();
 }
 
 float AxisCircleInvertedTest::distance(float a, float b)
