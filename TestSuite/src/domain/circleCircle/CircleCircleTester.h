@@ -5,7 +5,7 @@
 #include "CircleCircleDefaultTest.h"
 #include "CircleCircleCollisionTest.h"
 #include "CircleCircleEvasionTest.h"
-#include "CircleCircleInvertedTest.h"
+#include "inverted/CircleCircleInvertedTester.h"
 
 class CircleCircleTester
 {

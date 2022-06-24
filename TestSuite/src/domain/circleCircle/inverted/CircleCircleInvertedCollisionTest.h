@@ -3,11 +3,11 @@
 #include <string>
 #include "CircleCircle.h"
 
-class CircleCircleInvertedTest
+class CircleCircleInvertedCollisionTest
 {
 public:
-	CircleCircleInvertedTest();
-	~CircleCircleInvertedTest();
+	CircleCircleInvertedCollisionTest();
+	~CircleCircleInvertedCollisionTest();
 
 	std::string test();
 
