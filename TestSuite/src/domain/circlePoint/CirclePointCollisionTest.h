@@ -16,7 +16,7 @@ private:
 	bool collision(float);
 	float invert(float);
 	float distance(float, float);
-	float absolute(float);
+	float distance(float);
 	float squareRoot(float);
 
 private:

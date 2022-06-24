@@ -61,10 +61,10 @@ float CirclePointCollisionTest::invert(float input)
 
 float CirclePointCollisionTest::distance(float a, float b)
 {
-	return absolute(a - b);
+	return distance(a - b);
 }
 
-float CirclePointCollisionTest::absolute(float input)
+float CirclePointCollisionTest::distance(float input)
 {
 	return input * input;
 }
