@@ -43,7 +43,7 @@ bool CirclePointInvertedCollisionTest::collision(float input)
 	float point[3]{
 		invert(input),
 		invert(input),
-		invert(input),
+		invert(input)
 	};
 
 	circle[3] = invert(squareRoot(distance(point[0], circle[0]) + distance(point[1], circle[1]) + distance(point[2], circle[2])));
