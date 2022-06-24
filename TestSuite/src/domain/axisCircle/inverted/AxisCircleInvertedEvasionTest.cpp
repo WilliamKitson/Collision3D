@@ -67,6 +67,10 @@ bool AxisCircleInvertedEvasionTest::collision(float input)
 
 float AxisCircleInvertedEvasionTest::distance(float a, float b)
 {
-	float output = a - b;
-	return output * output;
+	return distance(a - b);
+}
+
+float AxisCircleInvertedEvasionTest::distance(float input)
+{
+	return input * input;
 }
