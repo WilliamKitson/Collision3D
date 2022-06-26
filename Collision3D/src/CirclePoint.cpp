@@ -42,10 +42,10 @@ float collision3D::CirclePoint::distance(float circle[4], float point[3])
 
 float collision3D::CirclePoint::distance(float a, float b)
 {
-	return distance(a - b);
+	return square(a - b);
 }
 
-float collision3D::CirclePoint::distance(float input)
+float collision3D::CirclePoint::square(float input)
 {
 	return input * input;
 }
