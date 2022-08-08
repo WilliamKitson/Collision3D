@@ -242,23 +242,6 @@
     <ClCompile Include="src\domain\pointPoint\PointPointZposTest.cpp" />
     <ClCompile Include="src\Entrypoint.cpp" />
     <ClCompile Include="src\MemoryTest.cpp" />
-    <ClCompile Include="src\presentation\axis\AxisDepthTest.cpp" />
-    <ClCompile Include="src\presentation\axis\AxisHeightTest.cpp" />
-    <ClCompile Include="src\presentation\axis\AxisTester.cpp" />
-    <ClCompile Include="src\presentation\axis\AxisWidthTest.cpp" />
-    <ClCompile Include="src\presentation\axis\AxisXposTest.cpp" />
-    <ClCompile Include="src\presentation\axis\AxisYposTest.cpp" />
-    <ClCompile Include="src\presentation\axis\AxisZposTest.cpp" />
-    <ClCompile Include="src\presentation\circle\CircleRadiusTest.cpp" />
-    <ClCompile Include="src\presentation\circle\CircleTester.cpp" />
-    <ClCompile Include="src\presentation\circle\CircleXposTest.cpp" />
-    <ClCompile Include="src\presentation\circle\CircleYposTest.cpp" />
-    <ClCompile Include="src\presentation\circle\CircleZposTest.cpp" />
-    <ClCompile Include="src\presentation\point\PointTester.cpp" />
-    <ClCompile Include="src\presentation\point\PointXposTest.cpp" />
-    <ClCompile Include="src\presentation\point\PointYposTest.cpp" />
-    <ClCompile Include="src\presentation\point\PointZposTest.cpp" />
-    <ClCompile Include="src\presentation\PresentationTester.cpp" />
     <ClCompile Include="src\SubordinateTester.cpp" />
   </ItemGroup>
   <ItemGroup>
@@ -356,23 +339,6 @@
     <ClInclude Include="src\domain\pointPoint\PointPointYposTest.h" />
     <ClInclude Include="src\domain\pointPoint\PointPointZposTest.h" />
     <ClInclude Include="src\MemoryTest.h" />
-    <ClInclude Include="src\presentation\axis\AxisDepthTest.h" />
-    <ClInclude Include="src\presentation\axis\AxisHeightTest.h" />
-    <ClInclude Include="src\presentation\axis\AxisTester.h" />
-    <ClInclude Include="src\presentation\axis\AxisWidthTest.h" />
-    <ClInclude Include="src\presentation\axis\AxisXposTest.h" />
-    <ClInclude Include="src\presentation\axis\AxisYposTest.h" />
-    <ClInclude Include="src\presentation\axis\AxisZposTest.h" />
-    <ClInclude Include="src\presentation\circle\CircleRadiusTest.h" />
-    <ClInclude Include="src\presentation\circle\CircleTester.h" />
-    <ClInclude Include="src\presentation\circle\CircleXposTest.h" />
-    <ClInclude Include="src\presentation\circle\CircleYposTest.h" />
-    <ClInclude Include="src\presentation\circle\CircleZposTest.h" />
-    <ClInclude Include="src\presentation\point\PointTester.h" />
-    <ClInclude Include="src\presentation\point\PointXposTest.h" />
-    <ClInclude Include="src\presentation\point\PointYposTest.h" />
-    <ClInclude Include="src\presentation\point\PointZposTest.h" />
-    <ClInclude Include="src\presentation\PresentationTester.h" />
     <ClInclude Include="src\SubordinateTester.h" />
   </ItemGroup>
   <ItemGroup>

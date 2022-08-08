@@ -14,7 +14,6 @@ std::string SubordinateTester::test()
 
 	output += testDomain();
 	output += testApplication();
-	output += testPresentation();
 
 	return output;
 }
@@ -27,9 +26,4 @@ std::string SubordinateTester::testDomain()
 std::string SubordinateTester::testApplication()
 {
 	return ApplicationTester().test();
-}
-
-std::string SubordinateTester::testPresentation()
-{
-	return PresentationTester().test();
 }
