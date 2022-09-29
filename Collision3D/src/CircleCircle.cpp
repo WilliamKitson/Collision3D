@@ -33,9 +33,10 @@ float collision3D::CircleCircle::distance(float a[4], float b[4])
 {
 	float output = 0.0f;
 
-	output += distance(a[0], b[0]);
-	output += distance(a[1], b[1]);
-	output += distance(a[2], b[2]);
+	for (int i{ 0 }; i < 3; i++)
+	{
+		output += distance(a[i], b[i]);
+	}
 
 	return output;
 }
